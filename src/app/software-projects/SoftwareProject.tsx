@@ -1,8 +1,10 @@
-const Software_Development_Project = (props) => {
+import { SoftwareDevelopmentProjectProps } from "../interfaceProps"
+
+const Software_Development_Project = (props: SoftwareDevelopmentProjectProps) => {
   return (
     <>
     <div className="software-project">
-      <img src ={props.img} />
+      <img src ={props.img} alt={props.title}/>
       <strong className='software-project-name'>{props.title}</strong>
       <p className='software-project-description'>{props.description}</p>
       <div className='software-button-container'>
