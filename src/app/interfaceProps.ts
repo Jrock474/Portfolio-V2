@@ -5,3 +5,8 @@ export interface SoftwareDevelopmentProjectProps {
   gitHub: string;
   website: string;
 }
+
+export interface SoftwareProps {
+    img: string;
+    text: string;
+  }
