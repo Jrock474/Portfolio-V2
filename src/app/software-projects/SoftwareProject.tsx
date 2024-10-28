@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SoftwareDevelopmentProjectProps } from "../interfaceProps";
 
-const Software_Development_Project = (
+const SoftwareProject = (
   props: SoftwareDevelopmentProjectProps,
 ) => {
   return (
@@ -23,4 +23,4 @@ const Software_Development_Project = (
   );
 };
 
-export default Software_Development_Project;
+export default SoftwareProject;
