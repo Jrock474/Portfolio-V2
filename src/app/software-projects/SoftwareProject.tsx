@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { SoftwareDevelopmentProjectProps } from "../interfaceProps";
 
-const SoftwareProject = (
-  props: SoftwareDevelopmentProjectProps,
-) => {
+const SoftwareProject = (props: SoftwareDevelopmentProjectProps) => {
   return (
     <>
       <div className="software-project">
