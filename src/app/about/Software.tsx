@@ -1,15 +1,15 @@
-import Image from "next/image"
-import { SoftwareProps } from "../interfaceProps"
+import Image from "next/image";
+import { SoftwareProps } from "../interfaceProps";
 
 const Software = (props: SoftwareProps) => {
-    return (
-      <>
+  return (
+    <>
       <div id="devicon">
-          <Image id='devicon-image' alt={props.text} src={props.img} />
-          <p>{props.text}</p>
+        <Image id="devicon-image" alt={props.text} src={props.img} />
+        <p>{props.text}</p>
       </div>
-      </>
-    )
-  }
-  
-  export default Software
+    </>
+  );
+};
+
+export default Software;

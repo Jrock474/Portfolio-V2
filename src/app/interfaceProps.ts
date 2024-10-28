@@ -7,6 +7,6 @@ export interface SoftwareDevelopmentProjectProps {
 }
 
 export interface SoftwareProps {
-    img: string;
-    text: string;
-  }
+  img: string;
+  text: string;
+}

@@ -14,19 +14,14 @@ const Designs = () => {
   };
 
   const lightboxImageClick = () => {
-   
-      setIsLightBoxActive(false);
-      setLightBox("");
-    
+    setIsLightBoxActive(false);
+    setLightBox("");
   };
 
   return (
     <>
       {isLightboxActive === true ? (
-        <div
-          onClick={lightboxImageClick}
-          id="lightbox"
-        >
+        <div onClick={lightboxImageClick} id="lightbox">
           <Image alt={lightbox} src={lightbox} />
         </div>
       ) : null}
