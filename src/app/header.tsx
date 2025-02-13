@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-black/30 text-[#f1f1f1] w-full h-auto z-[1000]">
-        <section className="px-0 mx-auto max-w-[96.125rem] w-full h-inherit flex md:flex-col justify-evenly content-center">
+        <section className="flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
           {isMobile ? (
             <div
               onClick={onNavbarClick}
@@ -44,13 +44,13 @@ const Header = () => {
             className={
               isNavbarSelected && isMobile
                 ? "flex flex-col w-full p-0 text-center"
-                : "flex list-none items-center"
+                : "flex flex-wrap list-none items-center justify-center space-x-4 text-white text-base p-auto"
             }
           >
-            <li>
-              <Link href="/about">About</Link>
-              <Link href="/software-development">Software-Development</Link>
-              <Link href="/multi-media">Multi-Media</Link>
+            <li className="px-5 py-4 hover:bg-white hover:text-gray-800 transition-colors">
+              <Link className="block px-5 py-4" href="/about">About</Link>
+              <Link className="block px-5 py-4" href="/software-development">Software-Development</Link>
+              <Link className="block px-5 py-4" href="/multi-media">Multi-Media</Link>
             </li>
           </ul>
         </section>
