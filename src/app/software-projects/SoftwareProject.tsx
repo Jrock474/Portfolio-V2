@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SoftwareDevelopmentProjectProps } from "../interfaceProps";
+import { SoftwareDevelopmentProjectProps } from "./interfaceProps";
 
 const SoftwareProject = (props: SoftwareDevelopmentProjectProps) => {
   return (
