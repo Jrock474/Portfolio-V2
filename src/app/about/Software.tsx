@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { SoftwareProps } from "../software-projects/interfaceProps";
+import { DevIcon } from "../software-projects/interfaceProps";
 
-const Software = (props: SoftwareProps) => {
+const Software = (devIcon: DevIcon) => {
   return (
     <>
       <div id="devicon">
-        <Image id="devicon-image" alt={props.text} src={props.img} />
-        <p>{props.text}</p>
+        <Image id="devicon-image" alt={devIcon.text} src={devIcon.img} />
+        <p>{devIcon.text}</p>
       </div>
     </>
   );
