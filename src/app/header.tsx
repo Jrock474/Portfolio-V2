@@ -24,11 +24,11 @@ const Header = () => {
           {isMobile ? (
             <div
               onClick={onNavbarClick}
-              className="absolute hidden flex-col justify-between w-[30px] h-[21px] top-[25px] right-[25px]"
+              className="absolute z-[10000] flex flex-col justify-between w-[30px] h-[21px] top-[25px] right-[25px]"
             >
-              <span className="h-[3px] w-full bg-white rounded-[10px]"></span>
-              <span className="h-[3px] w-full bg-white rounded-[10px]"></span>
-              <span className="h-[3px] w-full bg-white rounded-[10px]"></span>
+              <span className="h-[3px] w-full bg-white rounded-[50px]"></span>
+              <span className="h-[3px] w-full bg-white rounded-[50px]"></span>
+              <span className="h-[3px] w-full bg-white rounded-[50px]"></span>
             </div>
           ) : null}
 
@@ -46,7 +46,7 @@ const Header = () => {
                 isNavbarSelected && isMobile
                   ? "flex flex-col w-full text-center list-none"
                   : isMobile
-                    ? "flex flex-col list-none items-center justify-center text-white text-base"
+                    ? "hidden"
                     : "flex list-none items-center flex-row"
               }
             >
