@@ -6,7 +6,7 @@ export interface SoftwareDevelopmentProjectProps {
   website: string;
 }
 
-export interface SoftwareProps {
+export interface DevIcon {
   img: string;
   text: string;
 }
