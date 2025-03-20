@@ -1,4 +1,4 @@
 export interface DevIcon {
-    img: string;
-    text: string;
-  }
+  img: string;
+  text: string;
+}
