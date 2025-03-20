@@ -19,9 +19,11 @@ const Header = () => {
 
   return (
     <>
-      <header  className={`bg-black/30 text-[#f1f1f1] w-full z-[1000] overflow-hidden transition-all duration-500 ease-in-out ${
+      <header
+        className={`bg-black/30 text-[#f1f1f1] w-full z-[1000] overflow-hidden transition-all duration-500 ease-in-out ${
           isNavbarSelected ? "h-[200px]" : "h-[100px]"
-        }`}>
+        }`}
+      >
         <section className=" transition-all duration-500 ease-in-out flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-6">
           {isMobile ? (
             <div
