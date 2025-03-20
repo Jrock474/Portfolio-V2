@@ -5,8 +5,3 @@ export interface SoftwareDevelopmentProjectProps {
   gitHub: string;
   website: string;
 }
-
-export interface DevIcon {
-  img: string;
-  text: string;
-}
