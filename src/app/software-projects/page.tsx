@@ -34,7 +34,7 @@ const page = () => {
           description="This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
         />
         <SoftwareProject
-          img="https://user-images.githubusercontent.com/38538883/281213796-b499276b-fcb3-4f24-8a62-e867a5085af2.png"
+          img="/pictures/kanri-mono.png"
           title="Kanri-Mono"
           gitHub="https://github.com/Jrock474/Capstone_Project"
           website="https://capstone-project-psi-bay.vercel.app/"
