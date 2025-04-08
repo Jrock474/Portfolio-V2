@@ -5,7 +5,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   return (
     <>
       <div className="software-project">
-        <Image src={softwareProject.img} alt={softwareProject.title} />
+        <Image width={350} height={350} src={softwareProject.img} alt={softwareProject.title} />
         <strong className="software-project-name">
           {softwareProject.title}
         </strong>
