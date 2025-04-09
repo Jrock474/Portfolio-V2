@@ -6,13 +6,12 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
 
   const cardClick = () => {
-    if (isSleected === true){
-      setIsSelected(false)
+    if (isSleected === true) {
+      setIsSelected(false);
     } else {
-      setIsSelected(true)
+      setIsSelected(true);
     }
-
-  }
+  };
 
   return (
     <>
@@ -46,9 +45,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
               Website
             </a>
           </div>
-        ) : (
-          null
-        )}
+        ) : null}
       </div>
     </>
   );
