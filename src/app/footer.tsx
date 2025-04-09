@@ -7,12 +7,10 @@ const Footer = () => {
         <a href="mailto:jordanw0412@gmail.com">Contact</a>
       </p>
       <div className="flex flex-row items-center">
-        <Image
+        <img
           className="h-4 w-4 flex"
           src="/site_images/copyright_symbol_3.png"
           alt={"Copyright symbol"}
-          width={16}
-          height={16}
         />
         <p className="p-3">All Rights Reserved</p>
       </div>
