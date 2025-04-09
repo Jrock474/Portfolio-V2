@@ -15,10 +15,10 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
 
   return (
     <>
-      <div onClick={cardClick} className="flex flex-col w-[270px] h-auto border-[ridge] m-[10px]">
+      <div onClick={cardClick} className="flex flex-col h-auto border-[ridge] m-[10px]">
         <Image
-          width={500}
-          height={500}
+          width={350}
+          height={350}
           src={softwareProject.img}
           alt={softwareProject.title}
         />
