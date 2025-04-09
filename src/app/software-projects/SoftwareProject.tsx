@@ -5,9 +5,18 @@ import { SoftwareDevelopmentProjectProps } from "./interfaceProps";
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
 
+  const cardClick = () => {
+    if (isSleected === true){
+      setIsSelected(false)
+    } else {
+      setIsSelected(true)
+    }
+
+  }
+
   return (
     <>
-      <div className="software-project">
+      <div onClick={cardClick} className="software-project">
         <Image
           width={350}
           height={350}
@@ -38,7 +47,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             </a>
           </div>
         ) : (
-          ""
+          null
         )}
       </div>
     </>
