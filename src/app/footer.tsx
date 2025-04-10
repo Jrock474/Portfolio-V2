@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="flex justify-evenly bottom-0 right-0 bg-black/30 text-[#f1f1f1] w-full mt-auto z-[1000] no-underline p-5">
-      <p>
+      <p className="flex items-center">
         <a href="mailto:jordanw0412@gmail.com">Contact</a>
       </p>
       <div className="flex flex-row items-center">
