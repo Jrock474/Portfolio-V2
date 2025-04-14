@@ -15,21 +15,22 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
 
   return (
     <>
-      <div onClick={cardClick} className="software-project">
+      <div
+        onClick={cardClick}
+        className="flex flex-col h-auto border-[ridge] m-[10px]"
+      >
         <Image
           width={350}
           height={350}
           src={softwareProject.img}
           alt={softwareProject.title}
         />
-        <strong className="software-project-name">
+        <strong className="flex justify-center w-full pt-5 pb-5">
           {softwareProject.title}
         </strong>
         {isSleected ? (
-          <div className="software-button-container">
-            <p className="software-project-description">
-              {softwareProject.description}
-            </p>
+          <div className="flex flex-col mt-auto pb-5 pt-5">
+            <p className="p-[30px] pr-[30px]">{softwareProject.description}</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
