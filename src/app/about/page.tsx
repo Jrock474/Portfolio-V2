@@ -25,16 +25,14 @@ const About = () => {
             </p>
             <div className="line-seporator"></div>
             <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
-              Skills & Technologies
+              Programming Languages
             </div>
             <div className="text-[1.6rem] flex flex-wrap">
-              <p>Video Editing</p>
-              <p>Graphic Design</p>
-              <p>Animations</p>
-              <p>Game Design</p>
+              <p>JavaScript</p>
+              <p>TypeScript</p>
+              <p>SQL</p>
+              <p>C#</p>
               <p>Typography</p>
-              <p>Music Production</p>
-              <p>Software Development</p>
             </div>
             <div className="line-seporator"></div>
             <div className="software-text">Software</div>
