@@ -25,14 +25,8 @@ const About = () => {
               All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
             </p>
             <div className="line-seporator"></div>
-            <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
-              Programming Languages
-            </div>
             <SoftwareLanguages />
             <div className="line-seporator"></div>
-            <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
-              Software
-            </div>
             <SoftwareTechnologies />
           </div>
         </section>
