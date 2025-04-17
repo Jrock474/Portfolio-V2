@@ -1,4 +1,5 @@
 import Devicons from "./Devicons";
+import SoftwareLanguages from "./SoftwareLanguages";
 
 const About = () => {
   return (
@@ -27,16 +28,12 @@ const About = () => {
             <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
               Programming Languages
             </div>
-            <div className="text-[1.6rem] flex flex-wrap">
-              <p>JavaScript</p>
-              <p>TypeScript</p>
-              <p>SQL</p>
-              <p>C#</p>
-              <p>Typography</p>
+            <div className="flex justify-center text-center flex-wrap pb-[50px]">
+              <SoftwareLanguages />
             </div>
             <div className="line-seporator"></div>
-            <div className="software-text">Software</div>
-            <div className="software">
+            <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">Software</div>
+            <div className="flex justify-center text-center flex-wrap pb-[50px]">
               <Devicons />
             </div>
           </div>
