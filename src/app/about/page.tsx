@@ -1,4 +1,4 @@
-import Devicons from "./Devicons";
+import SoftwareTechnologies from "./SoftwareTechnologies";
 import SoftwareLanguages from "./SoftwareLanguages";
 
 const About = () => {
@@ -34,7 +34,7 @@ const About = () => {
             <div className="line-seporator"></div>
             <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">Software</div>
             <div className="flex justify-center text-center flex-wrap pb-[50px]">
-              <Devicons />
+              <SoftwareTechnologies />
             </div>
           </div>
         </section>

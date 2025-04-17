@@ -1,6 +1,6 @@
 import Software from "./Software";
 
-const Devicons = () => {
+const SoftwareTechnologies = () => {
   return (
     <>
       <Software img="devicons/After Effects.svg" text="After Effects" />
@@ -25,4 +25,4 @@ const Devicons = () => {
   );
 };
 
-export default Devicons;
+export default SoftwareTechnologies;
