@@ -28,14 +28,12 @@ const About = () => {
             <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
               Programming Languages
             </div>
-            <div className="flex justify-center text-center flex-wrap pb-[50px]">
-              <SoftwareLanguages />
-            </div>
+            <SoftwareLanguages />
             <div className="line-seporator"></div>
-            <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">Software</div>
-            <div className="flex justify-center text-center flex-wrap pb-[50px]">
-              <SoftwareTechnologies />
+            <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
+              Software
             </div>
+            <SoftwareTechnologies />
           </div>
         </section>
       </div>
