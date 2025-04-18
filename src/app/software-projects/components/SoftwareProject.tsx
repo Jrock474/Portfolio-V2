@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { SoftwareDevelopmentProjectProps } from "./interfaceProps";
+import { SoftwareDevelopmentProjectProps } from "../interfaceProps";
 
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
