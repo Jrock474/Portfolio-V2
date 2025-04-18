@@ -5,11 +5,11 @@ const About = () => {
   return (
     <>
       <div className="about-content-flex">
-        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.6rem]">
+        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">
           About Me
         </h1>
         <section className="px-[20px] bg-[linear-gradient(rgba(75,75,75,0),rgba(26,26,48,1),rgba(26,26,48,1))] bg-no-repeat bg-cover">
-          <div className="text-[1.3rem] max-w-[50rem] mx-auto text-left pt-[10px]">
+          <div className="max-w-[50rem] mx-auto text-left pt-[10px]">
             <p>
               My journey with multimedia and software development began in 2018,
               during my computer science studies. Seeking a creative outlet, I
@@ -24,9 +24,9 @@ const About = () => {
             <p>
               All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
             </p>
-            <div className="line-seporator"></div>
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
             <SoftwareLanguages />
-            <div className="line-seporator"></div>
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
             <SoftwareTechnologies />
           </div>
         </section>
