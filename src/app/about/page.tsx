@@ -1,12 +1,15 @@
-import Devicons from "./Devicons";
+import SoftwareTechnologies from "./SoftwareTechnologies";
+import SoftwareLanguages from "./SoftwareLanguages";
 
 const About = () => {
   return (
     <>
       <div className="about-content-flex">
-        <h1>About Me</h1>
-        <section className="about-section2-bg">
-          <div className="about-section-content">
+        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">
+          About Me
+        </h1>
+        <section className="px-[20px] bg-[linear-gradient(rgba(75,75,75,0),rgba(26,26,48,1),rgba(26,26,48,1))] bg-no-repeat bg-cover">
+          <div className="max-w-[50rem] mx-auto text-left pt-[10px]">
             <p>
               My journey with multimedia and software development began in 2018,
               during my computer science studies. Seeking a creative outlet, I
@@ -21,22 +24,10 @@ const About = () => {
             <p>
               All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
             </p>
-            <div className="line-seporator"></div>
-            <div className="skills-text">Skills</div>
-            <div className="skills">
-              <p className="skills-grid1">Video Editing</p>
-              <p className="skills-grid2">Graphic Design</p>
-              <p className="skills-grid3">Animations</p>
-              <p className="skills-grid4">Game Design</p>
-              <p className="skills-grid5">Typography</p>
-              <p className="skills-grid6">Music Production</p>
-              <p className="skills-grid7">Software Development</p>
-            </div>
-            <div className="line-seporator"></div>
-            <div className="software-text">Software</div>
-            <div className="software">
-              <Devicons />
-            </div>
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+            <SoftwareLanguages />
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+            <SoftwareTechnologies />
           </div>
         </section>
       </div>
