@@ -1,5 +1,5 @@
-import SoftwareTechnologies from "./SoftwareTechnologies";
-import SoftwareLanguages from "./SoftwareLanguages";
+import SoftwareTechnologies from "./components/SoftwareTechnologies";
+import SoftwareLanguages from "./components/SoftwareLanguages";
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DevIcon } from "./interfaceProps";
+import { DevIcon } from "../interfaceProps";
 
 const Software = (devIcon: DevIcon) => {
   return (
