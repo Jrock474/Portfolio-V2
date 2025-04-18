@@ -1,10 +1,10 @@
 const Animations = () => {
   return (
     <>
-      <div className="gallery-section">
-        <h1>Animations</h1>
-        <div className="gallery-container">
-          <div className="animations-video">
+      <div className="min-h-full w-full">
+        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">Animations</h1>
+        <div className="flex flex-col items-center px-[20px]">
+          <div className="flex flex-wrap justify-center">
             <video src="../videos/World_is_Yours_10_Seconds.mp4" controls muted>
               {" "}
             </video>
