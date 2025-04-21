@@ -1,13 +1,12 @@
 import SoftwareTechnologies from "./components/SoftwareTechnologies";
 import SoftwareLanguages from "./components/SoftwareLanguages";
+import PageTitle from "../components/PageTitle";
 
 const About = () => {
   return (
     <>
       <div className="about-content-flex">
-        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">
-          About Me
-        </h1>
+        <PageTitle pageTitle="About Me" />
         <section className="px-[20px] bg-[linear-gradient(rgba(75,75,75,0),rgba(26,26,48,1),rgba(26,26,48,1))] bg-no-repeat bg-cover">
           <div className="max-w-[50rem] mx-auto text-left pt-[10px]">
             <p>
