@@ -5,7 +5,7 @@ import PageTitle from "../components/PageTitle";
 const page = () => {
   return (
     <>
-    <PageTitle pageTitle="Software Projects"/>
+      <PageTitle pageTitle="Software Projects" />
       <div className="flex flex-wrap justify-center px-5">
         <SoftwareProject
           img="/pictures/kanri-mono_server.png"
