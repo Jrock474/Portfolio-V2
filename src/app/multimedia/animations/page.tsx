@@ -4,21 +4,23 @@ const Animations = () => {
   return (
     <>
       <div className="min-h-full w-full">
-        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">Animations</h1>
+        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">
+          Animations
+        </h1>
         <div className="flex flex-col items-center px-[20px]">
           <div className="flex flex-wrap justify-center">
-            <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"/>
-            <Videos video="/videos/World_is_Yours_10_Seconds.mp4"/>
-            <Videos video="/videos/Naradala_There_is_a_Dragon_up There_1.mp4"/>
-            <Videos video="/videos/Narardala_A Bird That Does not Sing_1.mp4"/>
-            <Videos video="/videos/JESSAUDREY_Trancend_1.mp4"/>
-            <Videos video="/videos/YUMEFOREVER_Never_Cry_Again_Single.mp4"/>
-            <Videos video="/videos/Rey_HeavenSward Funk_1.mp4"/>
-            <Videos video="/videos/17929384093574157.mp4"/>
-            <Videos video="/videos/17878932143344437.mp4"/>
-            <Videos video="/videos/Schiller Productions Logo Intro Ver.2.mp4"/>
-            <Videos video="/videos/Maroon_Fest_Logo_Main_1.mp4"/>
-            <Videos video="/videos/Logo.mp4"/>
+            <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
+            <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
+            <Videos video="/videos/Naradala_There_is_a_Dragon_up There_1.mp4" />
+            <Videos video="/videos/Narardala_A Bird That Does not Sing_1.mp4" />
+            <Videos video="/videos/JESSAUDREY_Trancend_1.mp4" />
+            <Videos video="/videos/YUMEFOREVER_Never_Cry_Again_Single.mp4" />
+            <Videos video="/videos/Rey_HeavenSward Funk_1.mp4" />
+            <Videos video="/videos/17929384093574157.mp4" />
+            <Videos video="/videos/17878932143344437.mp4" />
+            <Videos video="/videos/Schiller Productions Logo Intro Ver.2.mp4" />
+            <Videos video="/videos/Maroon_Fest_Logo_Main_1.mp4" />
+            <Videos video="/videos/Logo.mp4" />
           </div>
         </div>
       </div>
