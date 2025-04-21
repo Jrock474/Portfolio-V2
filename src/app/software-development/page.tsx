@@ -1,12 +1,11 @@
 "use client";
 import SoftwareProject from "./components/SoftwareProject";
+import PageTitle from "../components/PageTitle";
 
 const page = () => {
   return (
     <>
-      <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.6rem]">
-        Software Development Projects
-      </h1>
+    <PageTitle pageTitle="Software Projects"/>
       <div className="flex flex-wrap justify-center px-5">
         <SoftwareProject
           img="/pictures/kanri-mono_server.png"

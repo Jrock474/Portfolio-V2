@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import PageTitle from "@/app/components/PageTitle";
 
 const Designs = () => {
   // Lightbox effect logic
@@ -26,7 +27,7 @@ const Designs = () => {
         </div>
       ) : null}
       <div className="gallery-section">
-        <h1>Designs</h1>
+        <PageTitle pageTitle="Designs" />
         <div className="gallery-container">
           <div className="gallery-picture">
             <Image

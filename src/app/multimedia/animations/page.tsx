@@ -1,12 +1,11 @@
 import Videos from "./Videos";
+import PageTitle from "@/app/components/PageTitle";
 
 const Animations = () => {
   return (
     <>
       <div className="min-h-full w-full">
-        <h1 className="text-center bg-[#333] pt-5 pb-5 m-0 w-full mb-[15px] text-[1.3rem]">
-          Animations
-        </h1>
+        <PageTitle pageTitle="Animations" />
         <div className="flex flex-col items-center px-[20px]">
           <div className="flex flex-wrap justify-center">
             <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
