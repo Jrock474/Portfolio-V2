@@ -9,7 +9,6 @@ export interface SoftwareDevelopmentProjectProps {
   website: string;
 }
 
-
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
 
@@ -25,20 +24,20 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
     <>
       <div
         onClick={cardClick}
-        className="flex flex-col h-auto border-[ridge] m-[10px]"
+        className="flex height-[auto] relative width=[auto] flex-col border-[ridge] m-[10px]"
       >
         <Image
-          width={350}
+          width={600}
           height={350}
           src={softwareProject.img}
           alt={softwareProject.title}
         />
-        <strong className="flex justify-center w-full pt-5 pb-5">
-          {softwareProject.title}
-        </strong>
         {isSleected ? (
-          <div className="flex flex-col mt-auto pb-5 pt-5">
-            <p className="p-[30px] pr-[30px]">{softwareProject.description}</p>
+          <div className="flex flex-col justify-center align-middle width-[100%] absolute h-full">
+            <strong className="flex justify-center w-full">
+              {softwareProject.title}
+            </strong>
+            <p> {softwareProject.description}</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +52,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             >
               Website
             </a>
-          </div>
+            </div>
         ) : null}
       </div>
     </>
