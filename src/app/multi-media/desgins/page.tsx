@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { useState } from "react";
 import PageTitle from "@/app/components/PageTitle";
@@ -23,7 +24,7 @@ const Designs = () => {
     <>
       {isLightboxActive === true ? (
         <div onClick={lightboxImageClick} id="lightbox">
-          <Image alt={lightbox} src={lightbox} />
+          <img alt={lightbox} src={lightbox} />
         </div>
       ) : null}
       <div className="gallery-section">
@@ -31,6 +32,8 @@ const Designs = () => {
         <div className="gallery-container">
           <div className="gallery-picture">
             <Image
+              width={600}
+              height={350}
               alt="Chalks BBQ Banner"
               src="/pictures/Chalks_BBQ_Banner.png"
               onClick={() => {
@@ -41,6 +44,8 @@ const Designs = () => {
               onClick={() => {
                 imageClick("/pictures/Chalks_BBQ.png");
               }}
+              width={600}
+              height={350}
               alt="Chalks BBQ"
               src="/pictures/Chalks_BBQ.png"
             />
