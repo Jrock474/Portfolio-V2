@@ -9,50 +9,44 @@ export interface SoftwareDevelopmentProjectProps {
   website: string;
 }
 
-
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
-
-  const cardClick = () => {
-    if (isSleected === true) {
-      setIsSelected(false);
-    } else {
-      setIsSelected(true);
-    }
-  };
 
   return (
     <>
       <div
-        onClick={cardClick}
-        className="flex flex-col h-auto border-[ridge] m-[10px]"
+        onMouseEnter={() =>{setIsSelected(true)}}
+        onMouseLeave={() =>{setIsSelected(false)}}
+        className="flex height-[auto] relative width=[auto] flex-col border-[ridge] m-[10px]"
       >
         <Image
-          width={350}
+          width={600}
           height={350}
           src={softwareProject.img}
           alt={softwareProject.title}
         />
-        <strong className="flex justify-center w-full pt-5 pb-5">
-          {softwareProject.title}
-        </strong>
         {isSleected ? (
-          <div className="flex flex-col mt-auto pb-5 pt-5">
-            <p className="p-[30px] pr-[30px]">{softwareProject.description}</p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={softwareProject.gitHub}
-            >
-              Github
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={softwareProject.website}
-            >
-              Website
-            </a>
+          <div className="p-6 bg-black/80 flex text-center flex-col justify-evenly align-middle width-[100%] absolute h-full">
+            <strong className="">
+              {softwareProject.title}
+            </strong>
+            <p className="text-left"> {softwareProject.description}</p>
+            <div className="flex justify-around">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={softwareProject.gitHub}
+              >
+                <img className="h-10 w-10" src="/site_images/github.svg" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={softwareProject.website}
+              >
+                <img className="h-10 w-10" src="/site_images/website.svg" />
+              </a>
+            </div>
           </div>
         ) : null}
       </div>
