@@ -15,8 +15,12 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   return (
     <>
       <div
-        onMouseEnter={() =>{setIsSelected(true)}}
-        onMouseLeave={() =>{setIsSelected(false)}}
+        onMouseEnter={() => {
+          setIsSelected(true);
+        }}
+        onMouseLeave={() => {
+          setIsSelected(false);
+        }}
         className="flex height-[auto] relative width=[auto] flex-col border-[ridge] m-[10px]"
       >
         <Image
@@ -27,9 +31,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
         />
         {isSleected ? (
           <div className="p-6 bg-black/80 flex text-center flex-col justify-evenly align-middle width-[100%] absolute h-full">
-            <strong className="">
-              {softwareProject.title}
-            </strong>
+            <strong className="">{softwareProject.title}</strong>
             <p className="text-left"> {softwareProject.description}</p>
             <div className="flex justify-around">
               <a
