@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer
-      className={`flex justify-evenly h-[auto] bottom-0 right-0 bg-black/30 text-[#f1f1f1] w-full mt-auto z-[1000] no-underline p-5 ${
+      className={`flex justify-evenly h-[auto] bottom-0 right-0 text-[#f1f1f1] w-full mt-auto z-[1000] no-underline p-5 ${
         pathName === "/" ? "bg-black/30" : "bg-[#585757]"
       }`}
     >
