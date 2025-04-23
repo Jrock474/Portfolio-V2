@@ -31,23 +31,19 @@ const Designs = () => {
         <PageTitle pageTitle="Designs" />
         <div className="flex flex-col items-center px-[20px]">
           <div className="mx-[5px] mb-[10px] flex flex-wrap justify-center">
-            <Image
+            <img
               className="max-h-[250px] max-w-full h-auto"
-              width={600}
-              height={350}
               alt="Chalks BBQ Banner"
               src="/pictures/Chalks_BBQ_Banner.png"
               onClick={() => {
                 imageClick("/pictures/Chalks_BBQ_Banner.png");
               }}
             />
-            <Image
+            <img
               className="max-h-[250px] max-w-full h-auto"
               onClick={() => {
                 imageClick("/pictures/Chalks_BBQ.png");
               }}
-              width={600}
-              height={350}
               alt="Chalks BBQ"
               src="/pictures/Chalks_BBQ.png"
             />
