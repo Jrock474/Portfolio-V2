@@ -1,9 +1,10 @@
 import Link from "next/link";
+import PageTitle from "../components/PageTitle";
 
 const MultiMedia = () => {
   return (
     <>
-      <h1>MultiMedia</h1>
+      <PageTitle pageTitle="Multi-Media"/>
       <div className="gallery-section">
         <div className="flex flex-col min-h-inherit items-center justify-center">
           <Link href="/animations">
