@@ -12,18 +12,11 @@ export interface SoftwareDevelopmentProjectProps {
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
 
-  const cardClick = () => {
-    if (isSleected === true) {
-      setIsSelected(false);
-    } else {
-      setIsSelected(true);
-    }
-  };
-
   return (
     <>
       <div
-        onClick={cardClick}
+        onMouseEnter={() =>{setIsSelected(true)}}
+        onMouseLeave={() =>{setIsSelected(false)}}
         className="flex height-[auto] relative width=[auto] flex-col border-[ridge] m-[10px]"
       >
         <Image
