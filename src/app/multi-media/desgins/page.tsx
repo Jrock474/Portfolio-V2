@@ -27,11 +27,12 @@ const Designs = () => {
           <img alt={lightbox} src={lightbox} />
         </div>
       ) : null}
-      <div className="gallery-section">
+      <div className="w-full h-full">
         <PageTitle pageTitle="Designs" />
-        <div className="gallery-container">
-          <div className="gallery-picture">
+        <div className="flex flex-col items-center px-[20px]">
+          <div className="mx-[5px] mb-[10px] flex flex-wrap justify-center">
             <Image
+              className="max-h-[250px] max-w-full h-auto"
               width={600}
               height={350}
               alt="Chalks BBQ Banner"
@@ -41,6 +42,7 @@ const Designs = () => {
               }}
             />
             <Image
+              className="max-h-[250px] max-w-full h-auto"
               onClick={() => {
                 imageClick("/pictures/Chalks_BBQ.png");
               }}
