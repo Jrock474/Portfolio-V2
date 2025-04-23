@@ -37,21 +37,21 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             <strong className="">
               {softwareProject.title}
             </strong>
-            <p> {softwareProject.description}</p>
-            <div className="flex">
+            <p className="text-left"> {softwareProject.description}</p>
+            <div className="flex justify-around">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={softwareProject.gitHub}
               >
-                Github
+                <img className="h-10 w-10" src="/site_images/github.svg" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={softwareProject.website}
               >
-                Website
+                <img className="h-10 w-10" src="/site_images/website.svg" />
               </a>
             </div>
           </div>
