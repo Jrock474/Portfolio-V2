@@ -1,16 +1,37 @@
+import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
+import SoftwareLanguages from "./about/components/SoftwareLanguages";
+
 export default function Home() {
   return (
-    <div>
-      <div>
-        <video
-          autoPlay
-          muted
-          loop
-          className="fixed w-screen h-screen top-0 right-0 object-cover"
-        >
-          <source src="videos\Timeline_1.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </div>
+    <>
+        <div className="z-[1000]">
+          {/* <PageTitle pageTitle="About Me" /> */}
+          <section className="px-[20px] z-[1000] z[1000] bg-black">
+            <div className="max-w-[50rem] mx-auto text-left pt-[10px]">
+              <p>
+                My journey with multimedia and software development began in
+                2018, during my computer science studies. Seeking a creative
+                outlet, I embarked on self-directed learning in graphic design,
+                followed by web design to present my graphic work effectively.
+                This sparked a passion for multimedia, fueled by the continuous
+                evolution of technology that keeps me in a perpetual state of
+                learning. My objective is to leverage my combined expertise in
+                software development and multimedia to contribute meaningfully
+                to the art and software development communities.
+              </p>
+              <p>
+                All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
+              </p>
+              <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+              <SoftwareLanguages />
+              <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+              <SoftwareTechnologies />
+            </div>
+          </section>
+        </div>
+      <video autoPlay muted loop className="fixed top-0 right-0 object-cover">
+        <source src="videos\Timeline_1.mp4" type="video/mp4" />
+      </video>
+    </>
   );
 }
