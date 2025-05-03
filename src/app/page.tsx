@@ -1,13 +1,15 @@
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
+import PageTitle from "./components/PageTitle";
 
 export default function Home() {
   return (
     <>
-        <div className="z-[1000]">
-          {/* <PageTitle pageTitle="About Me" /> */}
-          <section className="px-[20px] z-[1000] z[1000] bg-black">
+        <div className="flex flex-col z-[1000]">
+          <section className="h-screen"></section>
+          <section className="px-[20px] bg-black">
             <div className="max-w-[50rem] mx-auto text-left pt-[10px]">
+               <PageTitle pageTitle="About Me" />
               <p>
                 My journey with multimedia and software development began in
                 2018, during my computer science studies. Seeking a creative
