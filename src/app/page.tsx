@@ -23,7 +23,6 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
         <SoftwareLanguages />
         <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
         <SoftwareTechnologies />
