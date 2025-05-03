@@ -30,7 +30,7 @@ export default function Home() {
         </section>
       </div>
       <video autoPlay muted loop className="fixed w-screen h-screen top-0 right-0 object-cover">
-        <source src="videos\Timeline_1.mp4" type="video/mp4" />
+        <source src="/videos/World_is_Yours_10_Seconds.mp4" type="video/mp4" />
       </video>
     </>
   );
