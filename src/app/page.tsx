@@ -21,9 +21,6 @@ export default function Home() {
                 software development and multimedia to contribute meaningfully
                 to the art and software development communities.
               </p>
-              <p>
-                All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
-              </p>
               <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
               <SoftwareLanguages />
               <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
