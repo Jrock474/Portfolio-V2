@@ -23,9 +23,11 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <SoftwareLanguages />
-        <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
-        <SoftwareTechnologies />
+        <section className="px-[20px] mx-auto max-w-[50rem]">
+          <SoftwareLanguages />
+          <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+          <SoftwareTechnologies />
+        </section>
       </div>
       <video autoPlay muted loop className="fixed top-0 right-0 object-cover">
         <source src="videos\Timeline_1.mp4" type="video/mp4" />
