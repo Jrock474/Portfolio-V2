@@ -7,10 +7,10 @@ export default function Home() {
     <>
       <div className="flex flex-col z-[1000]">
         <section className="h-screen"></section>
-        <section className="bg-black">
+        <section className="bg-black/80 h-screen">
           <div className="pt-[10px]">
             <PageTitle pageTitle="About Me" />
-            <p className="max-w-[50rem] mx-auto text-left ">
+            <p className="max-w-[50rem] mx-auto text-left text-[1.5rem]">
               My journey with multimedia and software development began in 2018,
               during my computer science studies. Seeking a creative outlet, I
               embarked on self-directed learning in graphic design, followed by
