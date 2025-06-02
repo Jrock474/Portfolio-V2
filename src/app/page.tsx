@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <div className="flex flex-col z-[1000]">
         <section className="h-screen"></section>
-        <section className="bg-black/80 h-screen">
-          <div className="pt-[10px]">
+        <section className="flex flex-col justify-center bg-black/80 h-screen">
+          <div className="justify-center align-middle flex flex-col pt-[10px]">
             <PageTitle pageTitle="About Me" />
             <p className="max-w-[50rem] mx-auto text-left text-[1.5rem]">
               My journey with multimedia and software development began in 2018,
@@ -19,7 +19,7 @@ export default function Home() {
               technology that keeps me in a perpetual state of learning. My
               objective is to leverage my combined expertise in software
               development and multimedia to contribute meaningfully to the art
-              and software development communities.
+              and Software Development communities.
             </p>
           </div>
         </section>
@@ -29,7 +29,12 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
       </div>
-      <video autoPlay muted loop className="fixed w-screen h-screen top-0 right-0 object-cover">
+      <video
+        autoPlay
+        muted
+        loop
+        className="fixed w-screen h-screen top-0 right-0 object-cover"
+      >
         <source src="/videos/World_is_Yours_10_Seconds.mp4" type="video/mp4" />
       </video>
     </>
