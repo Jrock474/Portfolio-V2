@@ -10,7 +10,7 @@ export default function Home() {
         <section className="flex flex-col justify-center bg-black/80 h-screen">
           <div className="justify-center align-middle flex flex-col pt-[10px]">
             <PageTitle pageTitle="About Me" />
-            <p className="max-w-[50rem] mx-auto text-left text-[1.5rem]">
+            <p className="max-w-[50rem] px-8 mx-auto text-left text-[1rem]">
               My journey with multimedia and software development began in 2018,
               during my computer science studies. Seeking a creative outlet, I
               embarked on self-directed learning in graphic design, followed by
@@ -27,6 +27,22 @@ export default function Home() {
           <SoftwareLanguages />
           <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
           <SoftwareTechnologies />
+        </section>
+        <section className="flex flex-col justify-center bg-black/80 h-screen">
+          <div className="justify-center align-middle flex flex-col pt-[10px]">
+            <PageTitle pageTitle="Software Projects" />
+            <p className="max-w-[50rem] px-8 mx-auto text-left text-[1rem]">
+              My journey with multimedia and software development began in 2018,
+              during my computer science studies. Seeking a creative outlet, I
+              embarked on self-directed learning in graphic design, followed by
+              Web Design to present my graphic work effectively. This sparked a
+              passion for multimedia, fueled by the continuous evolution of
+              technology that keeps me in a perpetual state of learning. My
+              objective is to leverage my combined expertise in software
+              development and multimedia to contribute meaningfully to creative
+              and Software Development communities.
+            </p>
+          </div>
         </section>
       </div>
       <video
