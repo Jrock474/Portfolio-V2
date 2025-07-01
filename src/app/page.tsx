@@ -3,6 +3,7 @@ import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import PageTitle from "./components/PageTitle";
 import SoftwareProject from "./software-development/SoftwareProject";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -47,21 +48,12 @@ export default function Home() {
           website="https://movie-search-jrock474.vercel.app/"
           description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
         />
+
+        <Link href="/software-development" />
         
           </div>
           <div className="justify-center align-middle flex flex-col pt-[10px]">
             <div className="flex justify-center">Multi-Media</div>
-            <p className="max-w-[50rem] px-8 mx-auto text-left text-[1rem]">
-              My journey with multimedia and software development began in 2018,
-              during my computer science studies. Seeking a creative outlet, I
-              embarked on self-directed learning in graphic design, followed by
-              Web Design to present my graphic work effectively. This sparked a
-              passion for multimedia, fueled by the continuous evolution of
-              technology that keeps me in a perpetual state of learning. My
-              objective is to leverage my combined expertise in software
-              development and multimedia to contribute meaningfully to creative
-              and Software Development communities.
-            </p>
           </div>
         </section>
       </div>
