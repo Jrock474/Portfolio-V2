@@ -3,6 +3,7 @@ import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import PageTitle from "./components/PageTitle";
 import SoftwareProject from "./software-development/SoftwareProject";
+import Videos from "./multi-media/animations/Videos";
 import Link from "next/link";
 
 export default function Home() {
@@ -53,6 +54,8 @@ export default function Home() {
           </div>
           <div className="justify-center align-middle flex flex-col pt-[10px]">
             <div className="flex justify-center">Multi-Media</div>
+            <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
+            <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
           </div>
         </section>
       </div>
