@@ -32,8 +32,8 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
         <section className="flex flex-col justify-center bg-black/80 h-screen">
-          <div className="justify-center align-middle flex flex-col pt-[10px]">
             <div className="flex justify-center">Software Projects</div>
+          <div className="justify-center align-middle flex pt-[10px]">
             <SoftwareProject
           img="/pictures/kanri-mono_server.png"
           title="Kanri-Mono Server"
