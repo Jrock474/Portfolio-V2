@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import PageTitle from "./components/PageTitle";
@@ -32,25 +32,24 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
         <section className="flex flex-col justify-center bg-black/80 h-screen">
-            <div className="flex justify-center">Software Projects</div>
+          <div className="flex justify-center">Software Projects</div>
           <div className="justify-center align-middle flex pt-[10px]">
             <SoftwareProject
-          img="/pictures/kanri-mono_server.png"
-          title="Kanri-Mono Server"
-          gitHub="https://github.com/Jrock474/GraphQL-Practice"
-          website="https://graph-ql-practice-nine.vercel.app/"
-          description="GraphQL server dedicated to querying the database from Kanri-Mono to return user data"
-        />
-         <SoftwareProject
-          img="/pictures/movie_search.png"
-          title="Movie Search"
-          gitHub="https://github.com/Jrock474/Movie_Search"
-          website="https://movie-search-jrock474.vercel.app/"
-          description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
-        />
+              img="/pictures/kanri-mono_server.png"
+              title="Kanri-Mono Server"
+              gitHub="https://github.com/Jrock474/GraphQL-Practice"
+              website="https://graph-ql-practice-nine.vercel.app/"
+              description="GraphQL server dedicated to querying the database from Kanri-Mono to return user data"
+            />
+            <SoftwareProject
+              img="/pictures/movie_search.png"
+              title="Movie Search"
+              gitHub="https://github.com/Jrock474/Movie_Search"
+              website="https://movie-search-jrock474.vercel.app/"
+              description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
+            />
 
-        <Link href="/software-development" />
-        
+            <Link href="/software-development" />
           </div>
           <div className="justify-center align-middle flex flex-col pt-[10px]">
             <div className="flex justify-center">Multi-Media</div>
