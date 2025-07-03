@@ -52,7 +52,7 @@ export default function Home() {
 
             <Link href="/software-development" />
           </div>
-            <div className="flex justify-center">Multi-Media</div>
+          <div className="flex justify-center">Multi-Media</div>
           <div className="justify-center align-middle flex pt-[10px]">
             <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
             <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
