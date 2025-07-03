@@ -32,7 +32,7 @@ export default function Home() {
           <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
           <SoftwareTechnologies />
         </section>
-        <section className="flex flex-col justify-center bg-black/80 h-screen">
+        <section className="flex flex-col justify-center bg-black/80 h-auto">
           <div className="flex justify-center">Software Projects</div>
           <div className="justify-center align-middle flex pt-[10px]">
             <SoftwareProject
