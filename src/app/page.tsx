@@ -33,7 +33,7 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
         <section className="flex flex-col justify-center bg-black/80 h-auto">
-          <div className="flex justify-center">Software Projects</div>
+          <div className="pt-8 pb-2 flex justify-center">Software Projects</div>
           <div className="justify-center align-middle flex pt-[10px]">
             <SoftwareProject
               img="/pictures/kanri-mono_server.png"
@@ -50,13 +50,18 @@ export default function Home() {
               description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
             />
 
-            <Link href="/software-development" />
           </div>
-          <div className="flex justify-center">Multi-Media</div>
+            <Link href="/software-development">
+            <div>View More</div>
+             </Link>
+          <div className="pt-8 pb-2 flex justify-center">Multi-Media</div>
           <div className="justify-center align-middle flex pt-[10px]">
             <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
             <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
           </div>
+          <Link href="/software-development">
+            <div>View More</div>
+             </Link>
         </section>
       </div>
       <video
@@ -65,7 +70,7 @@ export default function Home() {
         loop
         className="fixed w-screen h-screen top-0 right-0 object-cover"
       >
-        <source src="/videos/World_is_Yours_10_Seconds.mp4" type="video/mp4" />
+        <source src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" type="video/mp4" />
       </video>
     </>
   );
