@@ -21,7 +21,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
         onMouseLeave={() => {
           setIsSelected(false);
         }}
-        className="flex height-[auto] relative width=[auto] flex-col border-[ridge] mx-[5px] mb-[10px]"
+        className="flex height-[auto] relative width=[auto] flex-col border-[ridge] mb-[10px]"
       >
         <Image
           width={600}
