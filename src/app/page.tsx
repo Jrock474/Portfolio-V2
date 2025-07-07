@@ -34,7 +34,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col justify-center bg-black/80 h-auto">
           <div className="pt-8 pb-2 flex justify-center">Software Projects</div>
-          <div className="justify-center align-middle flex pt-[10px]">
+          <div className="justify-center align-middle flex pt-[10px] flex-wrap">
             <SoftwareProject
               img="/pictures/kanri-mono_server.png"
               title="Kanri-Mono Server"
@@ -55,7 +55,7 @@ export default function Home() {
             <div>View More</div>
              </Link>
           <div className="pt-8 pb-2 flex justify-center">Multi-Media</div>
-          <div className="justify-center align-middle flex pt-[10px]">
+          <div className="justify-center align-middle flex pt-[10px] flex-wrap">
             <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
             <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
           </div>
