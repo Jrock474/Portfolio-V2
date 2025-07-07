@@ -56,9 +56,6 @@ const Header = () => {
                     : "flex list-none items-center flex-row"
               }
             >
-              <Link className="block px-3 py-2" href="/about">
-                About
-              </Link>
               <Link className="block px-3 py-2" href="/software-development">
                 Software-Development
               </Link>
