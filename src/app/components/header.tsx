@@ -22,9 +22,9 @@ const Header = () => {
   return (
     <>
       <header
-        className={`text-[#f1f1f1] w-full z-[1000] h-[auto] transition-all duration-500 ease-in-out ${
+        className={`text-[#f1f1f1] w-full z-[10000] h-[auto] transition-all duration-500 ease-in-out ${
           isNavbarSelected ? "h-[200px]" : "h-[100px]"
-        } ${pathName === "/" ? "bg-black/30" : "bg-[#585757]"} `}
+        } ${pathName === "/" ? "bg-black/30 fixed" : "bg-[#585757]"} `}
       >
         <section className="transition-all duration-500 ease-in-out flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
           {isMobile ? (
