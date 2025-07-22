@@ -50,15 +50,15 @@ export default function Home() {
               description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
             />
 
-          </div>
             <Link href="/software-development">
             <div>View More</div>
              </Link>
           <div className="pt-8 pb-2 flex justify-center">Multi-Media</div>
-          <div className="justify-center align-middle flex pt-[10px] flex-wrap">
+        
             <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
             <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
           </div>
+
           <Link href="/software-development">
             <div>View More</div>
              </Link>
