@@ -10,7 +10,14 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col z-[1000]">
-        <section className="h-screen"></section>
+        <section className="h-screen flex flex-col justify-center items-center">
+          <div className="text-center">
+            <div className="text-[2.5rem]">Jordan</div>
+            <div className="text-[1.5rem]">
+              Multimedia & Software Development
+            </div>
+          </div>
+        </section>
         <section className="flex flex-col justify-center bg-black/80 h-screen">
           <div className="justify-center align-middle flex flex-col pt-[10px]">
             <PageTitle pageTitle="About Me" />
