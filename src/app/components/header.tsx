@@ -38,14 +38,6 @@ const Header = () => {
             </div>
           ) : null}
 
-          <div className="text-center h-full font-juana">
-            <Link href="/">
-              <div className="text-[2.5rem]">Jordan</div>
-              <div className="text-[1.5rem] p-[10px]">
-                Multimedia & Software Development
-              </div>
-            </Link>
-          </div>
           <ul className="flex list-none items-center">
             <li
               className={
