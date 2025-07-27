@@ -22,8 +22,15 @@ const Designs = () => {
   return (
     <>
       {isLightboxActive === true ? (
-        <div onClick={lightboxImageClick} className="fixed z-[10000] inset-0 w-full h-full bg-[rgba(0,0,0,0.8)] flex justify-center items-center">
-          <img className="max-w-[80%] h-auto px-[10px]" alt={lightbox} src={lightbox} />
+        <div
+          onClick={lightboxImageClick}
+          className="fixed z-[10000] inset-0 w-full h-full bg-[rgba(0,0,0,0.8)] flex justify-center items-center"
+        >
+          <img
+            className="max-w-[80%] h-auto px-[10px]"
+            alt={lightbox}
+            src={lightbox}
+          />
         </div>
       ) : null}
       <div className="w-full h-full">
