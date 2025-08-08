@@ -25,7 +25,8 @@ const SoftwareTechnologies = () => {
         <Software img="devicons/Express.svg" text="Express.js" />
         <Software img="devicons/Jest.svg" text="Jest.js" />
         <Software img="devicons/Sequelize.svg" text="Sequelize.js" />
-        <Software img="devicons/Postgres.svg" text="NPM" />
+        <Software img="devicons/NPM.svg" text="NPM" />
+        <Software img="devicons/Postgres.svg" text="Postgres" />
         <Software img="devicons/Next.svg" text="Next.js" />
         <Software img="devicons/Docker.svg" text="Docker" />
         <Software img="devicons/GraphQL.svg" text="GraphQL" />
