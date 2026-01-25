@@ -4,7 +4,7 @@ import { DevIcon } from "../interfaceProps";
 const Software = (devIcon: DevIcon) => {
   return (
     <>
-      <div className="flex flex-col flex-wrap pb-[20px] px-[10px] w-[110px] items-center">
+      <div className="flex flex-col flex-wrap p-5 justify-center items-center">
         <Image
           id="devicon-image"
           width={50}
