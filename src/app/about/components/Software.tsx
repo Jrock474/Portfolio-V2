@@ -7,8 +7,8 @@ const Software = (devIcon: DevIcon) => {
       <div className="flex flex-col flex-wrap p-5 justify-center items-center">
         <Image
           id="devicon-image"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           alt={devIcon.text}
           src={devIcon.img}
         />
