@@ -3,7 +3,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Header = () => {
-
   const pathName = usePathname();
 
   return (
@@ -13,13 +12,8 @@ const Header = () => {
         } ${pathName === "/" ? "bg-black/30 fixed" : "bg-[#585757]"} `}
       >
         <section className="transition-all duration-500 ease-in-out flex flex-col md:flex-row flex-wrap list-none items-center justify-end  md:space-y-0 md:space-x-4 text-white text-base p-4">
-          
           <ul className="flex list-none text-[1.25rem]">
-            <li
-              className={
-                 "flex list-none items-center flex-row"
-              }
-            >
+            <li className={"flex list-none items-center flex-row"}>
               <Link className="block mx-5 py-2" href="/software-development">
                 About
               </Link>

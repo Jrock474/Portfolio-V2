@@ -60,11 +60,11 @@ export default function Home() {
             <Link href="/software-development">
               <div>View More</div>
             </Link>
-            <div className="pt-8 pb-2 flex justify-center">Multi-Media</div>
-
-            <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
-            <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
           </div>
+          <div className="pt-8 pb-2 flex justify-center">Multi-Media</div>
+
+          <Videos video="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4" />
+          <Videos video="/videos/World_is_Yours_10_Seconds.mp4" />
 
           <Link href="/software-development">
             <div>View More</div>
