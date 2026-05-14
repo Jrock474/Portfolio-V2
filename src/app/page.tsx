@@ -42,7 +42,7 @@ export default function Home() {
         </section>
       </div>
       <video
-      src="/videos/Timeline_1.mp4"
+      src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
         autoPlay
         muted
         loop
