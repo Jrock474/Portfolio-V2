@@ -3,9 +3,6 @@
 import PageTitle from "./components/PageTitle";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
-import SoftwareProject from "./software-development/SoftwareProject";
-import Videos from "./multi-media/animations/Videos";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,9 +12,9 @@ export default function Home() {
           <div className="text-center">
             <div className="text-[2.5rem]">Jordan</div>
             <div className="text-[1.5rem]">
-              Multimedia & Software Development
-            </div>
+              Multimedia & Software Development</div>
           </div>
+          <div>Explore</div>
         </section>
         <section className="flex flex-col justify-center bg-black/80 h-screen">
           <div className="justify-center align-middle flex flex-col pt-[10px]">
