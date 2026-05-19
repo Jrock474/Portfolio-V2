@@ -12,7 +12,8 @@ export default function Home() {
           <div className="text-center">
             <div className="text-[2.5rem]">Jordan</div>
             <div className="text-[1.5rem]">
-              Multimedia & Software Development</div>
+              Multimedia & Software Development
+            </div>
           </div>
           <div>Explore</div>
         </section>
@@ -39,7 +40,7 @@ export default function Home() {
         </section>
       </div>
       <video
-      src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
+        src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
         autoPlay
         muted
         loop
