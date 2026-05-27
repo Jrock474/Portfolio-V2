@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <div className="flex flex-col z-[1000]">
-        <section className="h-screen flex flex-col justify-center items-center">
+        <section className="gap-10 h-screen flex flex-col justify-center items-center">
           <div className="text-center">
             <div className="text-[2.5rem]">Jordan</div>
             <div className="text-[1.5rem]">
@@ -39,6 +39,9 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
       </div>
+      <section>
+        <PageTitle pageTitle="Recent Projects" />
+      </section>
       <video
         src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
         autoPlay
