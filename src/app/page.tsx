@@ -18,7 +18,7 @@ export default function Home() {
           </div>
           <ExploreButton />
         </section>
-        <section className="flex flex-col justify-center bg-black/80 h-screen">
+        <section id="about-section" className="flex flex-col justify-center bg-black/80 h-screen">
           <div className="justify-center align-middle flex flex-col pt-[10px]">
             <PageTitle pageTitle="About Me" />
             <p className="max-w-[50rem] px-8 mx-auto text-left text-[1rem]">
