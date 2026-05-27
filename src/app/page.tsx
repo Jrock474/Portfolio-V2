@@ -3,6 +3,7 @@
 import PageTitle from "./components/PageTitle";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
+import { ExploreButton } from "./components/ExploreButton";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
               Multimedia & Software Development
             </div>
           </div>
-          <div>Explore</div>
+          <ExploreButton />
         </section>
         <section className="flex flex-col justify-center bg-black/80 h-screen">
           <div className="justify-center align-middle flex flex-col pt-[10px]">
