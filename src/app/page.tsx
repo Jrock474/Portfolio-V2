@@ -18,23 +18,28 @@ export default function Home() {
           </div>
           <ExploreButton />
         </section>
-        <section id="about-section" className="flex items-center bg-slate-950/90 py-20 min-h-screen">
+        <section
+          id="about-section"
+          className="flex items-center bg-slate-950/90 py-20 min-h-screen"
+        >
           <div className="mx-auto max-w-5xl px-6">
             <div className="grid gap-10 lg:grid-cols-[1fr_320px] rounded-[2rem] bg-slate-900/80 p-8 backdrop-blur-sm">
               <div className="flex flex-col justify-center">
                 <PageTitle pageTitle="About Me" />
                 <p className="text-slate-200 text-lg leading-7">
-                  My journey with multimedia and software development began in 2018,
-                  during my computer science studies. Seeking a creative outlet, I
-                  embarked on self-directed learning in graphic design, followed by
-                  Web Design to present my graphic work effectively.
+                  My journey with multimedia and software development began in
+                  2018, during my computer science studies. Seeking a creative
+                  outlet, I embarked on self-directed learning in graphic
+                  design, followed by Web Design to present my graphic work
+                  effectively.
                 </p>
                 <p className="mt-6 text-slate-200 text-lg leading-7">
-                  This sparked a passion for multimedia, fueled by the continuous
-                  evolution of technology that keeps me in a perpetual state of
-                  learning. My objective is to leverage my combined expertise in
-                  software development and multimedia to contribute meaningfully to
-                  creative and software development communities.
+                  This sparked a passion for multimedia, fueled by the
+                  continuous evolution of technology that keeps me in a
+                  perpetual state of learning. My objective is to leverage my
+                  combined expertise in software development and multimedia to
+                  contribute meaningfully to creative and software development
+                  communities.
                 </p>
               </div>
 

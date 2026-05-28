@@ -1,18 +1,18 @@
 import React from "react";
 
 export const ExploreButton = () => {
-    const handleClick = () => {
-        const aboutSection = document.getElementById("about-section");
+  const handleClick = () => {
+    const aboutSection = document.getElementById("about-section");
 
-        aboutSection?.scrollIntoView({
+    aboutSection?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
-}
-    return (
-        <>
-            <style>
-                {`
+  };
+  return (
+    <>
+      <style>
+        {`
                   .explore-button {
                     padding: 1rem 2rem;
             border-radius: 0.5rem;
@@ -112,5 +112,4 @@ export const ExploreButton = () => {
       </button>
     </>
   );
-}
-
+};

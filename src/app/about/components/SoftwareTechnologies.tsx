@@ -3,9 +3,7 @@ import Software from "./Software";
 const SoftwareTechnologies = () => {
   return (
     <>
-      <div className="text-3xl text-center mt-[70px] mb-[40px]">
-        Software
-      </div>
+      <div className="text-3xl text-center mt-[70px] mb-[40px]">Software</div>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
         <Software img="devicons/After Effects.svg" text="After Effects" />
         <Software img="devicons/Adobe Illustrator.svg" text="Illustrator" />
