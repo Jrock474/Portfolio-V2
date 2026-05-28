@@ -13,8 +13,8 @@ export const ExploreButton = () => {
     <>
       <style>
         {`
-                  .explore-button {
-                    padding: 1rem 2rem;
+          .explore-button {
+            padding: 1rem 2rem;
             border-radius: 0.5rem;
             border: none;
             font-size: 1rem;
@@ -38,11 +38,11 @@ export const ExploreButton = () => {
             width: 100%;
             border-radius: 0.5rem;
             background: linear-gradient(
-                180deg,
-                rgba(8, 77, 126, 0) 0%,
-                rgba(8, 77, 126, 0.42) 100%
-              ),
-              rgba(47, 255, 255, 0.24);
+              180deg,
+              rgba(8, 77, 126, 0) 0%,
+              rgba(8, 77, 126, 0.42) 100%
+            ),
+            rgba(47, 255, 255, 0.24);
             box-shadow: inset 0 0 12px rgba(151, 200, 255, 0.44);
             z-index: -1;
           }
@@ -56,11 +56,11 @@ export const ExploreButton = () => {
             width: 100%;
             height: 100%;
             background: linear-gradient(
-                180deg,
-                rgba(8, 77, 126, 0) 0%,
-                rgba(8, 77, 126, 0.42) 100%
-              ),
-              rgba(47, 255, 255, 0.24);
+              180deg,
+              rgba(8, 77, 126, 0) 0%,
+              rgba(8, 77, 126, 0.42) 100%
+            ),
+            rgba(47, 255, 255, 0.24);
             box-shadow: inset 0 0 12px rgba(151, 200, 255, 0.44);
             border-radius: 0.5rem;
             opacity: 0;
@@ -89,18 +89,17 @@ export const ExploreButton = () => {
             padding: 1px;
             inset: 0;
             background: linear-gradient(
-                180deg,
-                rgba(184, 238, 255, 0.24) 0%,
-                rgba(184, 238, 255, 0) 100%
-              ),
+              180deg,
+              rgba(184, 238, 255, 0.24) 0%,
+              rgba(184, 238, 255, 0) 100%),
               linear-gradient(
                 0deg,
                 rgba(184, 238, 255, 0.32),
                 rgba(184, 238, 255, 0.32)
-              );
-            -webkit-mask: linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
+            );
+             -webkit-mask: linear-gradient(#fff 0 0) content-box,
+             linear-gradient(#fff 0 0);
+              -webkit-mask-composite: xor;
             pointer-events: none;
           }
         `}
