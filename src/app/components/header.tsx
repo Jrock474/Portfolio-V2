@@ -59,8 +59,8 @@ const Header = () => {
               <Link className="block px-3 py-2" href="/software-development">
                 Software-Development
               </Link>
-              <Link className="block px-3 py-2" href="/multi-media">
-                Multi-Media test
+              <Link className="block mx-5 py-2" href="/multi-media">
+                Contact
               </Link>
             </li>
           </ul>
