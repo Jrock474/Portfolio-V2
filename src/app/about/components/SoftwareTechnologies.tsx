@@ -3,7 +3,7 @@ import Software from "./Software";
 const SoftwareTechnologies = () => {
   return (
     <>
-      <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
+      <div className="text-3xl text-center mt-[70px] mb-[40px]">
         Software
       </div>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
