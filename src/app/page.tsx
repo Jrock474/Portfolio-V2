@@ -7,7 +7,7 @@ import { ExploreButton } from "./components/ExploreButton";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div className="flex flex-col z-[1000]">
         <section className="gap-10 h-screen flex flex-col justify-center items-center">
           <div className="text-center">
@@ -69,6 +69,6 @@ export default function Home() {
         loop
         className="fixed w-screen h-screen top-0 right-0 object-cover -z-10"
       ></video>
-    </div>
+    </>
   );
 }
