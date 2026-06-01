@@ -58,10 +58,10 @@ export default function Home() {
           <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
           <SoftwareTechnologies />
         </section>
-      </div>
       <section>
         <PageTitle pageTitle="Recent Projects" />
       </section>
+      </div>
       <video
         src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
         autoPlay
