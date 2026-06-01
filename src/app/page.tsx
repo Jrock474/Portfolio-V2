@@ -1,6 +1,6 @@
 "use client";
 
-import PageTitle from "./components/SectionTitle";
+import SectionTitle from "./components/SectionTitle";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="grid gap-10 lg:grid-cols-[1fr_320px] rounded-[2rem] bg-slate-900/80 p-8 backdrop-blur-sm">
               <div className="flex flex-col justify-center">
-                <PageTitle pageTitle="About Me" />
+                <SectionTitle pageTitle="About Me" />
                 <p className="text-slate-200 text-lg leading-7">
                   My journey with multimedia and software development began in
                   2018, during my computer science studies. Seeking a creative
@@ -61,7 +61,7 @@ export default function Home() {
         </section>
       <section id="projects-section"
           className=" bg-slate-950/90 pt-10 pb-20 px-5">
-        <PageTitle pageTitle="Recent Projects" />
+        <SectionTitle pageTitle="Recent Projects" />
         <div className="flex flex-wrap justify-center">
         <SoftwareProject
           img="/pictures/kanri-mono_server.png"
