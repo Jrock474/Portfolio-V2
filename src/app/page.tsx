@@ -60,9 +60,9 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
       <section id="projects-section"
-          className="min-h-screen bg-slate-950/90 pt-10 pb-20">
+          className="min-h-screen bg-slate-950/90 pt-10 pb-20 px-5">
         <PageTitle pageTitle="Recent Projects" />
-        <div className="flex flex-wrap justify-center px-5">
+        <div className="flex flex-wrap justify-center">
         <SoftwareProject
           img="/pictures/kanri-mono_server.png"
           title="Kanri-Mono Server"
