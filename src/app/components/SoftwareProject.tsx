@@ -7,6 +7,7 @@ export interface SoftwareDevelopmentProjectProps {
   description: string;
   gitHub: string;
   website: string;
+  technologies?: string[];
 }
 
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
@@ -48,6 +49,16 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
               >
                 <img className="h-10 w-10" src="/site_images/website.svg" />
               </a>
+            </div>
+            <div>
+              {softwareProject.technologies?.map((technology) => 
+              <Image
+                width={30}
+                height={30}
+                src={`/devicons/${technology}.svg`}
+                alt={`${technology} logo`}
+              />
+              )}
             </div>
           </div>
         ) : null}
