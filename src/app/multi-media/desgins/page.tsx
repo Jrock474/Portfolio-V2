@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import PageTitle from "@/app/components/PageTitle";
+import PageTitle from "@/app/components/SectionTitle";
 
 const Designs = () => {
   // Lightbox effect logic

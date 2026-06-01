@@ -1,20 +1,21 @@
 "use client";
 
-import PageTitle from "./components/PageTitle";
+import SectionTitle from "./components/SectionTitle";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
+import SoftwareProject from "./components/SoftwareProject";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div className="flex flex-col z-[1000]">
         <section className="gap-10 h-screen flex flex-col justify-center items-center">
           <div className="text-center">
-            <div className="text-[2.5rem]">Jordan</div>
-            <div className="text-[1.5rem]">
+            <h1 className="text-[2.5rem]">Jordan</h1>
+            <h2 className="text-[1.5rem]">
               Multimedia & Software Development
-            </div>
+            </h2>
           </div>
           <ExploreButton />
         </section>
@@ -25,7 +26,7 @@ export default function Home() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="grid gap-10 lg:grid-cols-[1fr_320px] rounded-[2rem] bg-slate-900/80 p-8 backdrop-blur-sm">
               <div className="flex flex-col justify-center">
-                <PageTitle pageTitle="About Me" />
+                <SectionTitle pageTitle="About Me" />
                 <p className="text-slate-200 text-lg leading-7">
                   My journey with multimedia and software development began in
                   2018, during my computer science studies. Seeking a creative
@@ -58,10 +59,55 @@ export default function Home() {
           <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
           <SoftwareTechnologies />
         </section>
+      <section id="projects-section"
+          className=" bg-slate-950/90 pt-10 pb-20 px-5">
+        <SectionTitle pageTitle="Recent Projects" />
+        <div className="flex flex-wrap justify-center">
+        <SoftwareProject
+          img="/pictures/kanri-mono_server.png"
+          title="Kanri-Mono Server"
+          gitHub="https://github.com/Jrock474/GraphQL-Practice"
+          website="https://graph-ql-practice-nine.vercel.app/"
+          description="GraphQL server dedicated to querying the database from Kanri-Mono to return user data"
+        />
+        <SoftwareProject
+          img="/pictures/movie_search.png"
+          title="Movie Search"
+          gitHub="https://github.com/Jrock474/Movie_Search"
+          website="https://movie-search-jrock474.vercel.app/"
+          description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
+        />
+        <SoftwareProject
+          img="/pictures/country_search.png"
+          title="Country Search"
+          gitHub="https://github.com/Jrock474/React_Project"
+          website="https://react-project-jrock474.vercel.app/"
+          description="My first React Project that searches and displays all Countries from an API while also displaying specific information on the selected country such as it's continent, timezone, ect."
+        />
+        <SoftwareProject
+          img="/pictures/portfoliov1.png"
+          title="Portfolio (Version 1)"
+          gitHub="https://github.com/Jrock474/Austral.github.io"
+          website="https://jrock474.github.io/Austral.github.io/index.html"
+          description="This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
+        />
+        <SoftwareProject
+          img="/pictures/kanri-mono.png"
+          title="Kanri-Mono"
+          gitHub="https://github.com/Jrock474/Capstone_Project"
+          website="https://capstone-project-psi-bay.vercel.app/"
+          description="Collaborative project focused around creating a pet game. I was responsible for the server and backend"
+        />
+        <SoftwareProject
+          img="/pictures/health_fitness.png"
+          title="Health & Fitness"
+          gitHub="https://github.com/Jrock474/GraphQL-Practice"
+          website="https://front-end-project-plum.vercel.app/"
+          description="My first collaboration project focused on using HTML CSS and Vanilla JavaScript"
+        />
       </div>
-      <section>
-        <PageTitle pageTitle="Recent Projects" />
       </section>
+      </div>
       <video
         src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
         autoPlay
@@ -69,6 +115,6 @@ export default function Home() {
         loop
         className="fixed w-screen h-screen top-0 right-0 object-cover -z-10"
       ></video>
-    </div>
+    </>
   );
 }
