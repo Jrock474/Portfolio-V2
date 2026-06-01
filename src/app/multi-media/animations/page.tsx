@@ -1,5 +1,5 @@
 import Videos from "./Videos";
-import PageTitle from "@/app/components/PageTitle";
+import PageTitle from "@/app/components/SectionTitle";
 
 const Animations = () => {
   return (

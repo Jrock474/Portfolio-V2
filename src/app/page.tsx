@@ -1,6 +1,6 @@
 "use client";
 
-import PageTitle from "./components/PageTitle";
+import PageTitle from "./components/SectionTitle";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
