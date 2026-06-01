@@ -60,7 +60,7 @@ export default function Home() {
           <SoftwareTechnologies />
         </section>
       <section id="projects-section"
-          className="min-h-screen bg-slate-950/90 pt-10 pb-20 px-5">
+          className=" bg-slate-950/90 pt-10 pb-20 px-5">
         <PageTitle pageTitle="Recent Projects" />
         <div className="flex flex-wrap justify-center">
         <SoftwareProject
