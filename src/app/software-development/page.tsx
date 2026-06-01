@@ -1,5 +1,5 @@
 "use client";
-import SoftwareProject from "./SoftwareProject";
+import SoftwareProject from "../components/SoftwareProject";
 import PageTitle from "../components/SectionTitle";
 
 const page = () => {

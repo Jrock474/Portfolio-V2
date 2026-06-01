@@ -4,7 +4,7 @@ import SectionTitle from "./components/SectionTitle";
 import SoftwareLanguages from "./about/components/SoftwareLanguages";
 import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
-import SoftwareProject from "./software-development/SoftwareProject";
+import SoftwareProject from "./components/SoftwareProject";
 
 export default function Home() {
   return (
