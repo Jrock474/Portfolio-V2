@@ -69,6 +69,7 @@ export default function Home() {
           gitHub="https://github.com/Jrock474/GraphQL-Practice"
           website="https://graph-ql-practice-nine.vercel.app/"
           description="GraphQL server dedicated to querying the database from Kanri-Mono to return user data"
+          technologies={["Typescript", "JavaScript"]}
         />
         <SoftwareProject
           img="/pictures/movie_search.png"

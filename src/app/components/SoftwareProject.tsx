@@ -53,6 +53,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             <div>
               {softwareProject.technologies?.map((technology) => 
               <Image
+              key={technology}
                 width={30}
                 height={30}
                 src={`/devicons/${technology}.svg`}
