@@ -106,7 +106,7 @@ export default function Home() {
         <SoftwareProject
           img="/pictures/health_fitness.png"
           title="Health & Fitness"
-          gitHub="https://github.com/Jrock474/GraphQL-Practice"
+          gitHub="https://github.com/Jrock474/Front-End-Project"
           website="https://front-end-project-plum.vercel.app/"
           description="My first collaboration project focused on using HTML CSS and Vanilla JavaScript"
           technologies={["HTML", "CSS", "Javascript"]}
