@@ -35,37 +35,39 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             <h3 className="">{softwareProject.title}</h3>
             <p className="text-left"> {softwareProject.description}</p>
             <div className="flex flex-row justify-between">
-            <div className="flex justify-around">
-              <a
-              className="p-[20px]"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={softwareProject.gitHub}
-              >
-                <img className="h-10 w-10" src="/site_images/github.svg" />
-              </a>
-              <a
-              className="p-[20px]"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={softwareProject.website}
-              >
-                <img className="h-10 w-10" src="/site_images/website.svg" />
-              </a>
-            </div>
-            <div className="flex flex-row justify-center">
-              {softwareProject.technologies?.map((technology) => 
-              <div key={technology} className="p-[10px]">
-              <Image
-                width={40}
-                height={40}
-                className={technology === "Express" ? "filter invert" : ""}
-                src={`/devicons/${technology}.svg`}
-                alt={`${technology} logo`}
-              />
+              <div className="flex justify-around">
+                <a
+                  className="p-[20px]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={softwareProject.gitHub}
+                >
+                  <img className="h-10 w-10" src="/site_images/github.svg" />
+                </a>
+                <a
+                  className="p-[20px]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={softwareProject.website}
+                >
+                  <img className="h-10 w-10" src="/site_images/website.svg" />
+                </a>
               </div>
-              )}
-            </div>
+              <div className="flex flex-row justify-center">
+                {softwareProject.technologies?.map((technology) => (
+                  <div key={technology} className="p-[10px]">
+                    <Image
+                      width={40}
+                      height={40}
+                      className={
+                        technology === "Express" ? "filter invert" : ""
+                      }
+                      src={`/devicons/${technology}.svg`}
+                      alt={`${technology} logo`}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ) : null}
