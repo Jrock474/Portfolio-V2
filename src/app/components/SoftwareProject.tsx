@@ -55,9 +55,8 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             </div>
             <div className="flex flex-row justify-center">
               {softwareProject.technologies?.map((technology) => 
-              <div className="p-[10px]">
+              <div key={technology} className="p-[10px]">
               <Image
-              key={technology}
                 width={40}
                 height={40}
                 className={technology === "Express" ? "filter invert" : ""}
