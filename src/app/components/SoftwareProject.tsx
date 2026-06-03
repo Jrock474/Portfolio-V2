@@ -31,7 +31,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
           alt={softwareProject.title}
         />
         {isSleected ? (
-          <div className="p-6 bg-black/80 flex text-center flex-col justify-evenly align-middle width-[100%] absolute h-full">
+          <div className="p-6 bg-black/80 flex text-center flex-col justify-around align-middle width-[100%] absolute h-full">
             <h3 className="">{softwareProject.title}</h3>
             <p className="text-left"> {softwareProject.description}</p>
             <div className="flex flex-row justify-between">
