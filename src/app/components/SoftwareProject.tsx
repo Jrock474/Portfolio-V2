@@ -7,6 +7,7 @@ export interface SoftwareDevelopmentProjectProps {
   description: string;
   gitHub: string;
   website: string;
+  technologies?: string[];
 }
 
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
@@ -30,11 +31,13 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
           alt={softwareProject.title}
         />
         {isSleected ? (
-          <div className="p-6 bg-black/80 flex text-center flex-col justify-evenly align-middle width-[100%] absolute h-full">
+          <div className="p-6 bg-black/80 flex text-center flex-col justify-around align-middle width-[100%] absolute h-full">
             <h3 className="">{softwareProject.title}</h3>
             <p className="text-left"> {softwareProject.description}</p>
+            <div className="flex flex-row justify-between">
             <div className="flex justify-around">
               <a
+              className="p-[20px]"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={softwareProject.gitHub}
@@ -42,12 +45,27 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
                 <img className="h-10 w-10" src="/site_images/github.svg" />
               </a>
               <a
+              className="p-[20px]"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={softwareProject.website}
               >
                 <img className="h-10 w-10" src="/site_images/website.svg" />
               </a>
+            </div>
+            <div className="flex flex-row justify-center">
+              {softwareProject.technologies?.map((technology) => 
+              <div key={technology} className="p-[10px]">
+              <Image
+                width={40}
+                height={40}
+                className={technology === "Express" ? "filter invert" : ""}
+                src={`/devicons/${technology}.svg`}
+                alt={`${technology} logo`}
+              />
+              </div>
+              )}
+            </div>
             </div>
           </div>
         ) : null}

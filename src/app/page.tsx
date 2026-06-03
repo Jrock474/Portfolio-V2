@@ -69,6 +69,7 @@ export default function Home() {
           gitHub="https://github.com/Jrock474/GraphQL-Practice"
           website="https://graph-ql-practice-nine.vercel.app/"
           description="GraphQL server dedicated to querying the database from Kanri-Mono to return user data"
+          technologies={["Typescript", "GraphQl"]}
         />
         <SoftwareProject
           img="/pictures/movie_search.png"
@@ -76,6 +77,7 @@ export default function Home() {
           gitHub="https://github.com/Jrock474/Movie_Search"
           website="https://movie-search-jrock474.vercel.app/"
           description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
+          technologies={["React", "Javascript"]}
         />
         <SoftwareProject
           img="/pictures/country_search.png"
@@ -83,6 +85,7 @@ export default function Home() {
           gitHub="https://github.com/Jrock474/React_Project"
           website="https://react-project-jrock474.vercel.app/"
           description="My first React Project that searches and displays all Countries from an API while also displaying specific information on the selected country such as it's continent, timezone, ect."
+          technologies={["React", "Javascript"]}
         />
         <SoftwareProject
           img="/pictures/portfoliov1.png"
@@ -90,6 +93,7 @@ export default function Home() {
           gitHub="https://github.com/Jrock474/Austral.github.io"
           website="https://jrock474.github.io/Austral.github.io/index.html"
           description="This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
+          technologies={["HTML", "CSS", "Javascript"]}
         />
         <SoftwareProject
           img="/pictures/kanri-mono.png"
@@ -97,13 +101,15 @@ export default function Home() {
           gitHub="https://github.com/Jrock474/Capstone_Project"
           website="https://capstone-project-psi-bay.vercel.app/"
           description="Collaborative project focused around creating a pet game. I was responsible for the server and backend"
+          technologies={["Javascript", "Express", "NodeJS"]}
         />
         <SoftwareProject
           img="/pictures/health_fitness.png"
           title="Health & Fitness"
-          gitHub="https://github.com/Jrock474/GraphQL-Practice"
+          gitHub="https://github.com/Jrock474/Front-End-Project"
           website="https://front-end-project-plum.vercel.app/"
           description="My first collaboration project focused on using HTML CSS and Vanilla JavaScript"
+          technologies={["HTML", "CSS", "Javascript"]}
         />
       </div>
       </section>
