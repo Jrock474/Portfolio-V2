@@ -23,6 +23,7 @@ const SoftwareTechnologies = () => {
         <Software img="devicons/Jest.svg" text="Jest.js" />
         <Software img="devicons/Sequelize.svg" text="Sequelize.js" />
         <Software img="devicons/NPM.svg" text="NPM" />
+        <Software img="devicons/GraphQL.svg" text="GraphQL" />
       </div>
     </>
   );
