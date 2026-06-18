@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavLink = (navLink: string) => {
+const NavLink = ({ navLink }: { navLink: string }) => {
 
     const handleClick = () => {
         const section = document.getElementById(`${navLink.toLocaleLowerCase}-section`)

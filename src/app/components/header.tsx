@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import NavLink from "./NavLink";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 const Header = () => {
@@ -56,12 +57,10 @@ const Header = () => {
                     : "flex list-none items-center flex-row"
               }
             >
-              <Link className="block px-3 py-2" href="/software-development">
-                Software-Development
-              </Link>
-              <Link className="block mx-5 py-2" href="/multi-media">
-                Contact
-              </Link>
+              <NavLink navLink = "About" />
+              <NavLink navLink = "Skills" />
+              <NavLink navLink = "Projects" />
+              <NavLink navLink = "Contact" /> 
             </li>
           </ul>
         </section>
