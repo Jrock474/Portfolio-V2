@@ -27,10 +27,13 @@ const Header = () => {
           isNavbarSelected ? "h-[200px]" : "h-[100px]"
         } ${pathName === "/" ? "bg-black/30" : "bg-[#585757]"} `}
       >
-        <section className="transition-all duration-500 ease-in-out flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
+        <section className="flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
           {isMobile ? (
             <div
               onClick={onNavbarClick}
+              role="button"
+              aria-expanded={isNavbarSelected}
+              aria-label="Toggle navigation"
               className="absolute z-[10000] flex flex-col justify-between w-[30px] h-[21px] top-[25px] right-[25px] cursor-pointer"
             >
               <span className="h-[3px] w-full bg-white rounded-[50px]"></span>
@@ -50,17 +53,19 @@ const Header = () => {
           <ul className="flex list-none items-center">
             <li
               className={
-                isNavbarSelected && isMobile
-                  ? "flex flex-col w-full text-center list-none"
-                  : isMobile
-                    ? "hidden"
-                    : "flex list-none items-center flex-row"
+                isMobile
+                  ? `w-full overflow-hidden transition-all duration-500 ease-in-out ${
+                      isNavbarSelected ? "max-h-[400px] py-4" : "max-h-0"
+                    }`
+                  : "flex list-none items-center flex-row"
               }
             >
-              <NavLink navLink = "About" />
-              <NavLink navLink = "Skills" />
-              <NavLink navLink = "Projects" />
-              <NavLink navLink = "Contact" /> 
+              <div className={isMobile ? "flex flex-col items-center" : "flex items-center flex-row"}>
+                <NavLink navLink="About" />
+                <NavLink navLink="Skills" />
+                <NavLink navLink="Projects" />
+                <NavLink navLink="Contact" />
+              </div>
             </li>
           </ul>
         </section>
