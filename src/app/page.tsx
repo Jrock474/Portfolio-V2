@@ -45,14 +45,14 @@ export default function Home() {
               <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-950">
                 <img
                   src="/pictures/1652164686829.jpeg"
-                  alt="Jordan portrait"
+                  alt="Jordan's portrait"
                   className="h-full w-full object-cover"
                 />
               </div>
             </div>
           </div>
         </section>
-        <section className="px-[20px] mx-auto max-w-[50rem]">
+        <section id="skills-section" className="px-[20px] mx-auto max-w-[50rem]">
           <SoftwareLanguages />
           <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
           <SoftwareTechnologies />
