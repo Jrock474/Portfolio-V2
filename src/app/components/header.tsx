@@ -7,6 +7,7 @@ import { useTheme, useMediaQuery } from "@mui/material";
 
 const Header = () => {
   const [isNavbarSelected, setIsNavbarSelected] = useState(false);
+  const [isHovered, setIsHovered] = useState(false)
 
   const onNavbarClick = () => {
     if (isNavbarSelected === false) {
@@ -23,9 +24,11 @@ const Header = () => {
   return (
     <>
       <header
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         className={`text-[#f1f1f1] w-full z-[1000] h-[auto] transition-all duration-500 ease-in-out ${
           isNavbarSelected ? "h-[200px]" : "h-[100px]"
-        } ${pathName === "/" ? "bg-black/30" : "bg-[#585757]"} `}
+        } ${isHovered === true ? "bg-black/80" : "bg-black/30"} `}
       >
         <section className="flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
           {isMobile ? (
