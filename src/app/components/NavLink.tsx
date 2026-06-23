@@ -11,7 +11,7 @@ const NavLink = ({ navLink }: { navLink: string }) => {
     }
   
     return (
-    <button className='p-3 ml-3 mr-3 rounded-full nav' onClick={handleClick}>{navLink}</button>
+    <button className='text-xl p-3 ml-3 mr-3 rounded-full nav' onClick={handleClick}>{navLink}</button>
   )
 }
 

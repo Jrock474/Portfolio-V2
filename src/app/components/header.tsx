@@ -30,7 +30,7 @@ const Header = () => {
           isNavbarSelected ? "h-[200px]" : "h-[100px]"
         } ${isHovered === true ? "bg-black/80" : "bg-black/30"} `}
       >
-        <section className="flex flex-col md:flex-row flex-wrap list-none items-center justify-evenly space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
+        <section className="ml-10 mr-10 flex flex-col md:flex-row flex-wrap list-none items-center justify-end space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
           {isMobile ? (
             <div
               onClick={onNavbarClick}
@@ -44,15 +44,14 @@ const Header = () => {
               <span className="h-[3px] w-full bg-white rounded-[50px]"></span>
             </div>
           ) : null}
-
-          <div className="text-center h-full font-juana">
+          {isMobile ? ( <div className="text-center h-full font-juana">
             <Link href="/">
               <div className="text-[2.5rem]">Jordan</div>
               <div className="text-[1.5rem] p-[10px]">
                 Multimedia & Software Development
               </div>
             </Link>
-          </div>
+          </div>) : ("")}
           <ul className="flex list-none items-center">
             <li
               className={
