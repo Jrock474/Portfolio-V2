@@ -30,7 +30,7 @@ const Header = () => {
           isNavbarSelected ? "h-[200px]" : "h-[100px]"
         } ${isHovered === true ? "bg-black/80" : "bg-black/30"} `}
       >
-        <section className="ml-10 mr-10 flex flex-col md:flex-row flex-wrap list-none items-center justify-end space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-4">
+        <section className="ml-10 mr-10 flex flex-col md:flex-row flex-wrap list-none items-center justify-end space-y-4 md:space-y-0 md:space-x-4 text-white text-base p-2">
           {isMobile ? (
             <div
               onClick={onNavbarClick}
