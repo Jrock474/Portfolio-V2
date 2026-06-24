@@ -50,9 +50,9 @@ export default function Home() {
                 />
                 <div className="absolute left-1/2 bottom-4 -translate-x-1/2 z-30 p-2 flex justify-center gap-3">
                   <a
-                    href="/resume.pdf"
-                    download
-                    aria-label="Download resume"
+                    href="/Jordan%20Williams%20Resume%20-%20SWE%20%26%20Implimentation.pdf"
+                    download="Jordan_Williams_Resume_SWE_Implimentation.pdf"
+                    aria-label="Download Jordan Williams resume"
                     className="flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-sm text-white"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -62,7 +62,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/your-profile"
+                    href="https://www.linkedin.com/in/jordanw0412"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Open LinkedIn profile"
