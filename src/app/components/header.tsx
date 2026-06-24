@@ -17,7 +17,6 @@ const Header = () => {
     }
   };
 
-  const pathName = usePathname();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
