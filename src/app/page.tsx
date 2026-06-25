@@ -55,8 +55,19 @@ export default function Home() {
                     aria-label="Download Jordan Williams resume"
                     className="flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-sm text-white"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v12m0 0l-4-4m4 4l4-4M21 21H3" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 3v12m0 0l-4-4m4 4l4-4M21 21H3"
+                      />
                     </svg>
                     Resume
                   </a>
@@ -68,8 +79,13 @@ export default function Home() {
                     aria-label="Open LinkedIn profile"
                     className="flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-sm text-white"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.27c-.966 0-1.75-.79-1.75-1.76 0-.97.784-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.784 1.76-1.75 1.76zm13.5 10.27h-3v-4.5c0-1.07-.02-2.44-1.49-2.44-1.49 0-1.72 1.16-1.72 2.36v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.6v4.71z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.27c-.966 0-1.75-.79-1.75-1.76 0-.97.784-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.784 1.76-1.75 1.76zm13.5 10.27h-3v-4.5c0-1.07-.02-2.44-1.49-2.44-1.49 0-1.72 1.16-1.72 2.36v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.6v4.71z" />
                     </svg>
                     LinkedIn
                   </a>
@@ -78,13 +94,16 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="skills-section" className="px-[20px] mx-auto max-w-[50rem]">
-                <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
-        Programming Languages
-      </h2>
+        <section
+          id="skills-section"
+          className="px-[20px] mx-auto max-w-[50rem]"
+        >
+          <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
+            Programming Languages
+          </h2>
           <SoftwareLanguages />
           <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
-                <h2 className="text-3xl text-center mt-[70px] mb-[40px]">Software</h2>
+          <h2 className="text-3xl text-center mt-[70px] mb-[40px]">Software</h2>
 
           <SoftwareTechnologies />
         </section>
@@ -148,7 +167,9 @@ export default function Home() {
         <section id="contact-section" className="bg-slate-900/80 py-20">
           <div className="mx-auto max-w-5xl px-6 text-center">
             <div className="mx-auto max-w-2xl">
-              <h2 className="text-3xl font-semibold text-white mb-4">Let’s Connect!</h2>
+              <h2 className="text-3xl font-semibold text-white mb-4">
+                Let’s Connect!
+              </h2>
 
               <form
                 action="https://formsubmit.co/jordanw0412@gmail.com"
@@ -223,7 +244,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </div>
       <video
         src="/videos/Ageturnerx_Anna_Choi_Cloudscape_1_1.mp4"
