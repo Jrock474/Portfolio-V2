@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Exo_2, Manrope } from "next/font/google";
 import AppLayout from "./applayout";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const exo = Exo_2({
+  subsets: ["latin"],
+  variable: "--font-exo",
+  weight: ["400", "600", "700"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  weight: ["300", "400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white min-h-screen flex flex-col relative`}
+        className={`${manrope.variable} ${exo.variable} antialiased bg-gray-900 text-white min-h-screen flex flex-col relative`}
       >
         <AppLayout>{children}</AppLayout>
       </body>

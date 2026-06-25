@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex flex-col z-[1000]">
         <section className="gap-10 h-screen flex flex-col justify-center items-center">
           <div className="text-center">
-            <h1 className="text-[2.5rem]">Jordan</h1>
+            <h1 className="text-[2.5rem]">Jordan Williams</h1>
             <h2 className="text-[1.5rem]">Multimedia & Software Development</h2>
           </div>
           <ExploreButton />
@@ -180,7 +180,7 @@ export default function Home() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your name"
+                    placeholder="Name"
                     required
                     className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                   />
