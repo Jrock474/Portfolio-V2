@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/SectionTitle";
 
 const MultiMedia = () => {
   return (

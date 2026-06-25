@@ -16,7 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Jordan Williams - Software Developer & Multi-Media Artist",
-  description: "A showcase of my work and projects as a software developer and multi-media artist.",
+  description:
+    "A showcase of my work and projects as a software developer and multi-media artist.",
 };
 
 export default function RootLayout({

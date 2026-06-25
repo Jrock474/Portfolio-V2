@@ -1,6 +1,6 @@
 import SoftwareTechnologies from "./components/SoftwareTechnologies";
 import SoftwareLanguages from "./components/SoftwareLanguages";
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/SectionTitle";
 
 const About = () => {
   return (

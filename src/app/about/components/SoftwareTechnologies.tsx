@@ -3,9 +3,6 @@ import Software from "./Software";
 const SoftwareTechnologies = () => {
   return (
     <>
-      <div className="text-[2.25rem] text-center mt-[70px] mb-[40px]">
-        Software
-      </div>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
         <Software img="devicons/After Effects.svg" text="After Effects" />
         <Software img="devicons/Adobe Illustrator.svg" text="Illustrator" />
@@ -20,11 +17,12 @@ const SoftwareTechnologies = () => {
         <Software img="devicons/AWS.svg" text="AWS(EC2)" />
         <Software img="devicons/JSON.svg" text="JSON" />
         <Software img="devicons/React.svg" text="React.js" />
-        <Software img="devicons/Node.js.svg" text="Node.js" />
+        <Software img="devicons/NodeJS.svg" text="Node.js" />
         <Software img="devicons/Express.svg" text="Express.js" />
         <Software img="devicons/Jest.svg" text="Jest.js" />
         <Software img="devicons/Sequelize.svg" text="Sequelize.js" />
         <Software img="devicons/NPM.svg" text="NPM" />
+        <Software img="devicons/GraphQL.svg" text="GraphQL" />
       </div>
     </>
   );
