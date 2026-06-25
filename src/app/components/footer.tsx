@@ -9,9 +9,6 @@ const Footer = () => {
         pathName === "/" ? "bg-black/80" : "bg-[#585757]"
       }`}
     >
-      <p className="flex items-center">
-        <a href="mailto:jordanw0412@gmail.com">Contact</a>
-      </p>
       <div className="flex flex-row items-center">
         <img
           className="h-4 w-4 flex"
