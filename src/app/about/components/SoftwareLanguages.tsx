@@ -3,9 +3,6 @@ import Software from "./Software";
 const SoftwareLanguages = () => {
   return (
     <>
-      <div className="text-3xl text-center mt-[70px] mb-[40px]">
-        Programming Languages
-      </div>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
         <Software img="devicons/HTML.svg" text="HTML" />
         <Software img="devicons/CSS.svg" text="CSS" />
