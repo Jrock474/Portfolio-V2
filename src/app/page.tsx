@@ -143,7 +143,7 @@ export default function Home() {
         <section id="contact-section" className="bg-slate-900/80 py-20">
           <div className="mx-auto max-w-5xl px-6 text-center">
             <div className="mx-auto max-w-2xl">
-              <h2 className="text-3xl font-semibold text-white mb-4">Let’s build something together</h2>
+              <h2 className="text-3xl font-semibold text-white mb-4">Let’s Connect!</h2>
 
               <form
                 action="https://formsubmit.co/jordanw0412@gmail.com"
