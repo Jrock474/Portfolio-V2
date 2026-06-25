@@ -180,7 +180,7 @@ export default function Home() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your name"
+                    placeholder="Name"
                     required
                     className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                   />
