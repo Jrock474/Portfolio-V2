@@ -6,7 +6,7 @@ import { useTheme, useMediaQuery } from "@mui/material";
 
 const Header = () => {
   const [isNavbarSelected, setIsNavbarSelected] = useState(false);
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   const onNavbarClick = () => {
     if (isNavbarSelected === false) {
@@ -42,14 +42,18 @@ const Header = () => {
               <span className="h-[3px] w-full bg-white rounded-[50px]"></span>
             </div>
           ) : null}
-          {isMobile ? ( <div className="text-center h-full font-juana">
-            <Link href="/">
-              <div className="text-[2.5rem]">Jordan</div>
-              <div className="text-[1.5rem] p-[10px]">
-                Multimedia & Software Development
-              </div>
-            </Link>
-          </div>) : ("")}
+          {isMobile ? (
+            <div className="text-center h-full font-juana">
+              <Link href="/">
+                <div className="text-[2.5rem]">Jordan</div>
+                <div className="text-[1.5rem] p-[10px]">
+                  Multimedia & Software Development
+                </div>
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
           <ul className="flex list-none items-center">
             <li
               className={
@@ -60,7 +64,13 @@ const Header = () => {
                   : "flex list-none items-center flex-row"
               }
             >
-              <div className={isMobile ? "flex flex-col items-center" : "flex items-center flex-row"}>
+              <div
+                className={
+                  isMobile
+                    ? "flex flex-col items-center"
+                    : "flex items-center flex-row"
+                }
+              >
                 <NavLink navLink="About" />
                 <NavLink navLink="Skills" />
                 <NavLink navLink="Projects" />
