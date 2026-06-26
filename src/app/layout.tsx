@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Exo_2, Manrope } from "next/font/google";
 import AppLayout from "./applayout";
 import "./globals.css";
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${manrope.variable} ${exo.variable} antialiased bg-gray-900 text-white min-h-screen flex flex-col relative`}
       >
         <AppLayout>{children}</AppLayout>
+        <Analytics />
       </body>
     </html>
   );
