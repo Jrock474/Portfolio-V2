@@ -7,7 +7,7 @@ const SoftwareLanguages = () => {
         <Software img="/devicons/HTML.svg" text="HTML" />
         <Software img="/devicons/CSS.svg" text="CSS" />
         <Software img="/devicons/JavaScript.svg" text="JavaScript" />
-        <Software img="/devicons/TypeScript.svg" text="TypeScript" />
+        <Software img="/devicons/Typescript.svg" text="TypeScript" />
         <Software img="/devicons/Csharp.svg" text="C#" />
       </div>
     </>
