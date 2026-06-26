@@ -4,11 +4,11 @@ const SoftwareLanguages = () => {
   return (
     <>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
-        <Software img="devicons/HTML.svg" text="HTML" />
-        <Software img="devicons/CSS.svg" text="CSS" />
-        <Software img="devicons/JavaScript.svg" text="JavaScript" />
-        <Software img="devicons/Typescript.svg" text="Typescript" />
-        <Software img="devicons/Csharp.svg" text="C#" />
+        <Software img="/devicons/HTML.svg" text="HTML" />
+        <Software img="/devicons/CSS.svg" text="CSS" />
+        <Software img="/devicons/JavaScript.svg" text="JavaScript" />
+        <Software img="/devicons/TypeScript.svg" text="TypeScript" />
+        <Software img="/devicons/Csharp.svg" text="C#" />
       </div>
     </>
   );
