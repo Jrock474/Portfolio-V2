@@ -1,8 +1,8 @@
 "use client";
 
 import SectionTitle from "./components/SectionTitle";
-import SoftwareLanguages from "./about/components/SoftwareLanguages";
-import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
+import SoftwareLanguages from "./components/SoftwareLanguages";
+import SoftwareTechnologies from "./components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
 import SoftwareProject from "./components/SoftwareProject";
 
@@ -94,18 +94,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section    
-          id="skills-section"
-          className="px-[20px] bg-slate-900/80"
-        >
-          <div className=" mx-auto max-w-[50rem]"> 
-          <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
-            Programming Languages
-          </h2>
-          <SoftwareLanguages />
-          <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
-          <h2 className="text-3xl text-center mt-[70px] mb-[40px]">Software</h2>
-          <SoftwareTechnologies />
+        <section id="skills-section" className="px-[20px] bg-slate-900/80">
+          <div className=" mx-auto max-w-[50rem]">
+            <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
+              Programming Languages
+            </h2>
+            <SoftwareLanguages />
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+            <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
+              Software
+            </h2>
+            <SoftwareTechnologies />
           </div>
         </section>
         <section
