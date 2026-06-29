@@ -119,7 +119,7 @@ export default function Home() {
               gitHub="https://github.com/Jrock474/Portfolio-V2"
               website="https://portfolio-v2-rho-ashy.vercel.app/"
               description="Portfolio showcasing my skills and projects in Software Development"
-              technologies={["Typescript"]}
+              technologies={["Typescript", "Nextjs"]}
             />
             <SoftwareProject
               img="/pictures/kanri-mono_server.png"
