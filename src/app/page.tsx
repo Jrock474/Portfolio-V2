@@ -114,6 +114,14 @@ export default function Home() {
           <SectionTitle pageTitle="Recent Projects" />
           <div className="flex flex-wrap justify-center">
             <SoftwareProject
+              img="/pictures/portfoliov2.png"
+              title="Portfolio (Version 2)"
+              gitHub="https://github.com/Jrock474/Portfolio-V2"
+              website="https://portfolio-v2-rho-ashy.vercel.app/"
+              description="Portfolio showcasing my skills and projects in Software Development"
+              technologies={["Typescript"]}
+            />
+            <SoftwareProject
               img="/pictures/kanri-mono_server.png"
               title="Kanri-Mono Server"
               gitHub="https://github.com/Jrock474/GraphQL-Practice"
