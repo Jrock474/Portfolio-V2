@@ -59,9 +59,6 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
                     <Image
                       width={40}
                       height={40}
-                      className={
-                        technology === "Express" ? "filter invert" : ""
-                      }
                       src={`/devicons/${technology}.svg`}
                       alt={`${technology} logo`}
                     />
