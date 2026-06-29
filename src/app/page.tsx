@@ -1,8 +1,8 @@
 "use client";
 
 import SectionTitle from "./components/SectionTitle";
-import SoftwareLanguages from "./about/components/SoftwareLanguages";
-import SoftwareTechnologies from "./about/components/SoftwareTechnologies";
+import SoftwareLanguages from "./components/SoftwareLanguages";
+import SoftwareTechnologies from "./components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
 import SoftwareProject from "./components/SoftwareProject";
 
@@ -94,17 +94,18 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id="skills-section"
-          className="px-[20px] mx-auto max-w-[50rem]"
-        >
-          <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
-            Programming Languages
-          </h2>
-          <SoftwareLanguages />
-          <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
-          <h2 className="text-3xl text-center mt-[70px] mb-[40px]">Software</h2>
-          <SoftwareTechnologies />
+        <section id="skills-section" className="px-[20px] bg-slate-900/80">
+          <div className=" mx-auto max-w-[50rem]">
+            <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
+              Programming Languages
+            </h2>
+            <SoftwareLanguages />
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+            <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
+              Software
+            </h2>
+            <SoftwareTechnologies />
+          </div>
         </section>
         <section
           id="projects-section"
@@ -112,6 +113,14 @@ export default function Home() {
         >
           <SectionTitle pageTitle="Recent Projects" />
           <div className="flex flex-wrap justify-center">
+            <SoftwareProject
+              img="/pictures/portfoliov2.png"
+              title="Portfolio (Version 2)"
+              gitHub="https://github.com/Jrock474/Portfolio-V2"
+              website="https://portfolio-v2-rho-ashy.vercel.app/"
+              description="Portfolio showcasing my skills and projects in Software Development"
+              technologies={["Typescript", "Nextjs"]}
+            />
             <SoftwareProject
               img="/pictures/kanri-mono_server.png"
               title="Kanri-Mono Server"
@@ -163,84 +172,85 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact-section" className="bg-slate-900/80 py-20">
-          <div className="mx-auto max-w-5xl px-6 text-center">
-            <div className="mx-auto max-w-2xl">
-              <h2 className="text-3xl font-semibold text-white mb-4">
-                Let’s Connect!
-              </h2>
+        <section
+          id="contact-section"
+          className="bg-slate-900/80 py-20 h-screen flex items-center"
+        >
+          <div className="mx-auto max-w-5xl px-6 text-center  flex-col">
+            <h2 className="text-3xl font-semibold text-white mb-4">
+              Let’s Connect!
+            </h2>
 
-              <form
-                action="https://formsubmit.co/jordanw0412@gmail.com"
-                method="POST"
-                className="space-y-4 text-left"
-              >
-                <input type="hidden" name="_captcha" value="false" />
-                <div className="grid gap-4 md:grid-cols-2">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    required
-                    className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                    className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
-                  />
-                </div>
+            <form
+              action="https://formsubmit.co/jordanw0412@gmail.com"
+              method="POST"
+              className="space-y-4 text-left"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <div className="grid gap-4 md:grid-cols-2">
                 <input
                   type="text"
-                  name="organization"
-                  placeholder="Organization (optional)"
-                  className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
-                />
-                <input
-                  type="text"
-                  name="_subject"
-                  placeholder="Subject"
+                  name="name"
+                  placeholder="Name"
                   required
                   className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                 />
-                <textarea
-                  name="message"
-                  rows={5}
-                  placeholder="Your message"
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
                   required
-                  className="w-full rounded-[1.5rem] border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                  className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                 />
-                <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                  <button
-                    type="submit"
-                    className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+              </div>
+              <input
+                type="text"
+                name="organization"
+                placeholder="Organization (optional)"
+                className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+              />
+              <input
+                type="text"
+                name="_subject"
+                placeholder="Subject"
+                required
+                className="w-full rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+              />
+              <textarea
+                name="message"
+                rows={5}
+                placeholder="Your message"
+                required
+                className="w-full rounded-[1.5rem] border border-white/10 bg-slate-950/90 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+              />
+              <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <button
+                  type="submit"
+                  className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+                >
+                  Send message
+                </button>
+                <div className="flex flex-wrap justify-center gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/jordanw0412"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open LinkedIn profile"
+                    className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-3 text-sm text-white transition hover:bg-white/20"
                   >
-                    Send message
-                  </button>
-                  <div className="flex flex-wrap justify-center gap-3">
-                    <a
-                      href="https://www.linkedin.com/in/jordanw0412"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Open LinkedIn profile"
-                      className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-3 text-sm text-white transition hover:bg-white/20"
-                    >
-                      LinkedIn
-                    </a>
-                    <a
-                      href="/Jordan%20Williams%20Resume%20-%20SWE%20%26%20Implimentation.pdf"
-                      download="Jordan_Williams_Resume_SWE_Implimentation.pdf"
-                      aria-label="Download resume"
-                      className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-3 text-sm text-white transition hover:bg-white/20"
-                    >
-                      Resume
-                    </a>
-                  </div>
+                    LinkedIn
+                  </a>
+                  <a
+                    href="/Jordan%20Williams%20Resume%20-%20SWE%20%26%20Implimentation.pdf"
+                    download="Jordan_Williams_Resume_SWE_Implimentation.pdf"
+                    aria-label="Download resume"
+                    className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-3 text-sm text-white transition hover:bg-white/20"
+                  >
+                    Resume
+                  </a>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </section>
       </div>
