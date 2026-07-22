@@ -4,9 +4,14 @@ import SectionTitle from "./components/SectionTitle";
 import SoftwareLanguages from "./components/SoftwareLanguages";
 import SoftwareTechnologies from "./components/SoftwareTechnologies";
 import { ExploreButton } from "./components/ExploreButton";
+import { track } from "@vercel/analytics";
 import SoftwareProject from "./components/SoftwareProject";
 
 export default function Home() {
+  const handleclick = (button: string) => {
+    track(`${button}_click`);
+  };
+
   return (
     <>
       <div className="flex flex-col z-[1000]">
@@ -17,6 +22,7 @@ export default function Home() {
           </div>
           <ExploreButton />
         </section>
+
         <section
           id="about-section"
           className="flex items-center bg-slate-950/90 py-20 min-h-screen"
@@ -50,6 +56,7 @@ export default function Home() {
                 />
                 <div className="absolute left-1/2 bottom-4 -translate-x-1/2 z-30 p-2 flex justify-center gap-3">
                   <a
+                    onClick={() => handleclick("resume")}
                     href="/Jordan%20Williams%20Resume%20-%20SWE%20%26%20Implimentation.pdf"
                     download="Jordan_Williams_Resume_SWE_Implimentation.pdf"
                     aria-label="Download Jordan Williams resume"
@@ -73,6 +80,7 @@ export default function Home() {
                   </a>
 
                   <a
+                    onClick={() => handleclick("linkedin")}
                     href="https://www.linkedin.com/in/jordanw0412"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -232,6 +240,7 @@ export default function Home() {
                 </button>
                 <div className="flex flex-wrap justify-center gap-3">
                   <a
+                    onClick={() => handleclick("resume")}
                     href="https://www.linkedin.com/in/jordanw0412"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -241,6 +250,7 @@ export default function Home() {
                     LinkedIn
                   </a>
                   <a
+                    onClick={() => handleclick("resume")}
                     href="/Jordan%20Williams%20Resume%20-%20SWE%20%26%20Implimentation.pdf"
                     download="Jordan_Williams_Resume_SWE_Implimentation.pdf"
                     aria-label="Download resume"
