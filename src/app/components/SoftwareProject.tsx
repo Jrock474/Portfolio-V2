@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 export interface SoftwareDevelopmentProjectProps {
   img: string;
@@ -12,6 +13,10 @@ export interface SoftwareDevelopmentProjectProps {
 
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
   const [isSleected, setIsSelected] = useState(false);
+
+  const handleClick = (target: string) => {
+    track(`${target}_click`);
+  };
 
   return (
     <>
@@ -37,6 +42,7 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
             <div className="flex flex-row justify-between">
               <div className="flex justify-around">
                 <a
+                  onClick={() => handleClick(`${softwareProject.title}_github`)}
                   className="p-[20px]"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -45,6 +51,9 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
                   <img className="h-10 w-10" src="/site_images/github.svg" />
                 </a>
                 <a
+                  onClick={() =>
+                    handleClick(`${softwareProject.title}_website`)
+                  }
                   className="p-[20px]"
                   target="_blank"
                   rel="noopener noreferrer"

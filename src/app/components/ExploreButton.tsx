@@ -1,7 +1,9 @@
 import React from "react";
+import { track } from "@vercel/analytics";
 
 export const ExploreButton = () => {
   const handleClick = () => {
+    track("explore_click");
     const aboutSection = document.getElementById("about-section");
 
     aboutSection?.scrollIntoView({

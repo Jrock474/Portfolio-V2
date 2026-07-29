@@ -1,7 +1,9 @@
 import React from "react";
+import { track } from "@vercel/analytics";
 
 const NavLink = ({ navLink }: { navLink: string }) => {
   const handleClick = () => {
+    track(`${navLink}_click`);
     const section = document.getElementById(
       `${navLink.toLocaleLowerCase()}-section`,
     );
