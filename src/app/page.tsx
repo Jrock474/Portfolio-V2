@@ -130,6 +130,13 @@ export default function Home() {
               technologies={["Typescript", "Nextjs"]}
             />
             <SoftwareProject
+              img="/pictures/api.png"
+              title="Labfinder Scheduler"
+              gitHub="https://github.com/Jrock474/labfinder_scheduler"
+              description="A healthcare scheduling API that manages users, providers, authentication, and appointment booking using Next.js, TypeScript, and LowDB"
+              technologies={["Typescript", "Nextjs"]}
+            />
+            <SoftwareProject
               img="/pictures/kanri-mono_server.png"
               title="Kanri-Mono Server"
               gitHub="https://github.com/Jrock474/GraphQL-Practice"
