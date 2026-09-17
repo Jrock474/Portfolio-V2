@@ -18,7 +18,7 @@ export default function Home() {
         <section className="gap-10 h-screen flex flex-col justify-center items-center">
           <div className="text-center">
             <h1 className="text-[2.5rem]">Jordan Williams</h1>
-            <h2 className="text-[1.5rem]">Multimedia & Software Development</h2>
+            <h2 className="text-[1.5rem]">Software Developer</h2>
           </div>
           <ExploreButton />
         </section>
@@ -32,19 +32,19 @@ export default function Home() {
               <div className="flex flex-col justify-center">
                 <SectionTitle pageTitle="About Me" />
                 <p className="text-slate-200 text-lg leading-7">
-                  My journey with multimedia and software development began in
-                  2018, during my computer science studies. Seeking a creative
-                  outlet, I embarked on self-directed learning in graphic
-                  design, followed by Web Design to present my graphic work
-                  effectively.
+                  I’m a software engineer with experience building web and
+                  mobile applications across healthcare and insurtech. I’ve
+                  worked with React, Next.js, React Native, TypeScript, Node.js,
+                  AWS, and PostgreSQL to build responsive interfaces,
+                  authentication flows, third-party API integrations, and
+                  production features used by real customers.
                 </p>
-                <p className="mt-6 text-slate-200 text-lg leading-7">
-                  This sparked a passion for multimedia, fueled by the
-                  continuous evolution of technology that keeps me in a
-                  perpetual state of learning. My objective is to leverage my
-                  combined expertise in software development and multimedia to
-                  contribute meaningfully to creative and software development
-                  communities.
+                <p className="text-slate-200 text-lg leading-7">
+                  My path into software started in design, which still shapes
+                  how I approach development today. I care about both how a
+                  product works and how it feels to use, combining technical
+                  problem-solving with a strong eye for usability and
+                  presentation.
                 </p>
               </div>
 
