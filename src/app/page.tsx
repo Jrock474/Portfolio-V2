@@ -18,7 +18,7 @@ export default function Home() {
         <section className="gap-10 h-screen flex flex-col justify-center items-center">
           <div className="text-center">
             <h1 className="text-[2.5rem]">Jordan Williams</h1>
-            <h2 className="text-[1.5rem]">Multimedia & Software Development</h2>
+            <h2 className="text-[1.5rem]">Software Developer</h2>
           </div>
           <ExploreButton />
         </section>
@@ -32,19 +32,19 @@ export default function Home() {
               <div className="flex flex-col justify-center">
                 <SectionTitle pageTitle="About Me" />
                 <p className="text-slate-200 text-lg leading-7">
-                  My journey with multimedia and software development began in
-                  2018, during my computer science studies. Seeking a creative
-                  outlet, I embarked on self-directed learning in graphic
-                  design, followed by Web Design to present my graphic work
-                  effectively.
+                  I’m a software engineer with experience building web and
+                  mobile applications across healthcare and insurtech. I’ve
+                  worked with React, Next.js, React Native, TypeScript, Node.js,
+                  AWS, and PostgreSQL to build responsive interfaces,
+                  authentication flows, third-party API integrations, and
+                  production features used by real customers.
                 </p>
-                <p className="mt-6 text-slate-200 text-lg leading-7">
-                  This sparked a passion for multimedia, fueled by the
-                  continuous evolution of technology that keeps me in a
-                  perpetual state of learning. My objective is to leverage my
-                  combined expertise in software development and multimedia to
-                  contribute meaningfully to creative and software development
-                  communities.
+                <p className="text-slate-200 text-lg leading-7">
+                  My path into software started in design, which still shapes
+                  how I approach development today. I care about both how a
+                  product works and how it feels to use, combining technical
+                  problem-solving with a strong eye for usability and
+                  presentation.
                 </p>
               </div>
 
@@ -130,36 +130,19 @@ export default function Home() {
               technologies={["Typescript", "Nextjs"]}
             />
             <SoftwareProject
-              img="/pictures/kanri-mono_server.png"
+              img="/pictures/api.png"
+              title="Labfinder Scheduler"
+              gitHub="https://github.com/Jrock474/labfinder_scheduler"
+              description="A healthcare scheduling API that manages users, providers, authentication, and appointment booking using Next.js, TypeScript, and LowDB"
+              technologies={["Typescript", "Nextjs"]}
+            />
+            <SoftwareProject
+              img="/pictures/api.png"
               title="Kanri-Mono Server"
               gitHub="https://github.com/Jrock474/GraphQL-Practice"
               website="https://graph-ql-practice-nine.vercel.app/"
               description="GraphQL server dedicated to querying the database from Kanri-Mono to return user data"
               technologies={["Typescript", "GraphQL"]}
-            />
-            <SoftwareProject
-              img="/pictures/movie_search.png"
-              title="Movie Search"
-              gitHub="https://github.com/Jrock474/Movie_Search"
-              website="https://movie-search-jrock474.vercel.app/"
-              description="A mobile responsive React app that searches movies from an IMBD API based off of provided query"
-              technologies={["React", "JavaScript"]}
-            />
-            <SoftwareProject
-              img="/pictures/country_search.png"
-              title="Country Search"
-              gitHub="https://github.com/Jrock474/React_Project"
-              website="https://react-project-jrock474.vercel.app/"
-              description="My first React Project that searches and displays all Countries from an API while also displaying specific information on the selected country such as it's continent, timezone, ect."
-              technologies={["React", "JavaScript"]}
-            />
-            <SoftwareProject
-              img="/pictures/portfoliov1.png"
-              title="Portfolio (Version 1)"
-              gitHub="https://github.com/Jrock474/Austral.github.io"
-              website="https://jrock474.github.io/Austral.github.io/index.html"
-              description="This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
-              technologies={["HTML", "CSS", "JavaScript"]}
             />
             <SoftwareProject
               img="/pictures/kanri-mono.png"
@@ -168,14 +151,6 @@ export default function Home() {
               website="https://capstone-project-psi-bay.vercel.app/"
               description="Collaborative project focused around creating a pet game. I was responsible for the server and backend"
               technologies={["JavaScript", "Express", "NodeJS"]}
-            />
-            <SoftwareProject
-              img="/pictures/health_fitness.png"
-              title="Health & Fitness"
-              gitHub="https://github.com/Jrock474/Front-End-Project"
-              website="https://front-end-project-plum.vercel.app/"
-              description="My first collaboration project focused on using HTML CSS and Vanilla JavaScript"
-              technologies={["HTML", "CSS", "JavaScript"]}
             />
           </div>
         </section>

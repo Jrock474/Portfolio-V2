@@ -7,7 +7,7 @@ export interface SoftwareDevelopmentProjectProps {
   title: string;
   description: string;
   gitHub: string;
-  website: string;
+  website?: string;
   technologies?: string[];
 }
 
@@ -50,17 +50,19 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
                 >
                   <img className="h-10 w-10" src="/site_images/github.svg" />
                 </a>
-                <a
-                  onClick={() =>
-                    handleClick(`${softwareProject.title}_website`)
-                  }
-                  className="p-[20px]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={softwareProject.website}
-                >
-                  <img className="h-10 w-10" src="/site_images/website.svg" />
-                </a>
+                {softwareProject.website ? (
+                  <a
+                    onClick={() =>
+                      handleClick(`${softwareProject.title}_website`)
+                    }
+                    className="p-[20px]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={softwareProject.website}
+                  >
+                    <img className="h-10 w-10" src="/site_images/website.svg" />
+                  </a>
+                ) : null}
               </div>
               <div className="flex flex-row justify-center">
                 {softwareProject.technologies?.map((technology) => (
