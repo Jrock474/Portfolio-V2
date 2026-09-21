@@ -17,7 +17,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Jordan Williams - Software Developer & Multi-Media Artist",
+  title: "Jordan Williams - Software Developer",
   description:
     "A showcase of my work and projects as a software developer and multi-media artist.",
 };
