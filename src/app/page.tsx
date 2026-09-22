@@ -122,14 +122,6 @@ export default function Home() {
           <SectionTitle pageTitle="Recent Projects" />
           <div className="flex flex-wrap justify-center">
             <SoftwareProject
-              img="/pictures/portfoliov2.png"
-              title="Portfolio (Version 2)"
-              gitHub="https://github.com/Jrock474/Portfolio-V2"
-              website="https://portfolio-v2-rho-ashy.vercel.app/"
-              description="Portfolio showcasing my skills and projects in Software Development"
-              technologies={["Typescript", "Nextjs"]}
-            />
-            <SoftwareProject
               img="/pictures/api.png"
               title="Labfinder Scheduler"
               gitHub="https://github.com/Jrock474/labfinder_scheduler"
@@ -151,6 +143,14 @@ export default function Home() {
               website="https://capstone-project-psi-bay.vercel.app/"
               description="Collaborative project focused around creating a pet game. I was responsible for the server and backend"
               technologies={["JavaScript", "Express", "NodeJS"]}
+            />
+             <SoftwareProject
+              img="/pictures/portfoliov2.png"
+              title="Portfolio (Version 2)"
+              gitHub="https://github.com/Jrock474/Portfolio-V2"
+              website="https://portfolio-v2-rho-ashy.vercel.app/"
+              description="Portfolio showcasing my skills and projects in Software Development"
+              technologies={["Typescript", "Nextjs"]}
             />
           </div>
         </section>

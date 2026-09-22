@@ -4,10 +4,6 @@ const SoftwareTechnologies = () => {
   return (
     <>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
-        <Software img="devicons/After Effects.svg" text="After Effects" />
-        <Software img="devicons/Adobe Illustrator.svg" text="Illustrator" />
-        <Software img="devicons/Adobe Photoshop.svg" text="Photoshop" />
-        <Software img="devicons/Jira.svg" text="Jira" />
         <Software
           img="devicons/Visual Studio Code (VS Code).svg"
           text="VS Code"
