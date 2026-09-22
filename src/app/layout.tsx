@@ -17,9 +17,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Jordan Williams - Software Developer",
+  title: "Jordan Williams | Software Developer",
   description:
-    "A showcase of my work and projects as a software developer and multi-media artist.",
+    "Software developer specializing in React, TypeScript, Next.js, React Native, Node.js, and modern web and mobile applications.",
 };
 
 export default function RootLayout({

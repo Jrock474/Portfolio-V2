@@ -47,7 +47,7 @@ const Header = () => {
               <Link href="/">
                 <div className="text-[2.5rem]">Jordan Williams</div>
                 <div className="text-[1.5rem] p-[10px]">
-                  Multimedia & Software Development
+                  Software Developer
                 </div>
               </Link>
             </div>
