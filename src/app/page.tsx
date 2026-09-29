@@ -2,7 +2,7 @@
 
 import SectionTitle from "./components/SectionTitle";
 import SoftwareLanguages from "./components/SoftwareLanguages";
-import SoftwareTechnologies from "./components/SoftwareTechnologies";
+import Tools from "./components/Tools";
 import { ExploreButton } from "./components/ExploreButton";
 import { track } from "@vercel/analytics";
 import SoftwareProject from "./components/SoftwareProject";
@@ -112,7 +112,7 @@ export default function Home() {
             <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
               Software
             </h2>
-            <SoftwareTechnologies />
+            <Tools />
           </div>
         </section>
         <section

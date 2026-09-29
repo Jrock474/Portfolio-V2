@@ -1,6 +1,6 @@
 import Software from "./Software";
 
-const SoftwareTechnologies = () => {
+const Tools = () => {
   return (
     <>
       <div className="flex justify-center text-center flex-wrap pb-[50px]">
@@ -13,4 +13,4 @@ const SoftwareTechnologies = () => {
   );
 };
 
-export default SoftwareTechnologies;
+export default Tools;
