@@ -7,7 +7,7 @@ const Tools = () => {
         <Software img="devicons/Git.svg" text="Git" />
         <Software img="devicons/GitHub.svg" text="GitHub" />
         <Software img="devicons/AWS.svg" text="AWS" />
-        <Software img="devicons/jest.svg" text="Jest.js" />
+        <Software img="devicons/fest.svg" text="Jest.js" />
       </div>
     </>
   );
