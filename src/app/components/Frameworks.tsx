@@ -9,7 +9,7 @@ export interface FrameworksProps {
 
 const Frameworks = () => {
   return (
-    <div className="flex justify-center text-center flex-wrap pb-[50px]">
+    <div className="flex justify-center text-center flex-wrap">
         <Software img="devicons/React.svg" text="React.js" />
         <Software img="devicons/React.svg" text="React Native" />
         <Software img="devicons/Nextjs.svg" text="Next.js" />

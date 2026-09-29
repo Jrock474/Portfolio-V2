@@ -6,6 +6,7 @@ import Tools from "./components/Tools";
 import { ExploreButton } from "./components/ExploreButton";
 import { track } from "@vercel/analytics";
 import SoftwareProject from "./components/SoftwareProject";
+import Frameworks from "./components/Frameworks";
 
 export default function Home() {
   const handleclick = (button: string) => {
@@ -110,7 +111,12 @@ export default function Home() {
             <SoftwareLanguages />
             <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
             <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
-              Software
+              Frameworks & Libraries
+            </h2>
+            <Frameworks />
+            <div className="bg-white h-[2px] mt-[50px] mb-[50px]"></div>
+            <h2 className="text-3xl text-center mt-[70px] mb-[40px]">
+              Cloud, Data & Tools
             </h2>
             <Tools />
           </div>
