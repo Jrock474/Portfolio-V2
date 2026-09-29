@@ -1,4 +1,4 @@
-import Software from "./Software";
+import Software from "./Tools";
 
 const SoftwareLanguages = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Software from "./Software";
+import Software from "./Tools";
 
 
 export interface FrameworksProps {
