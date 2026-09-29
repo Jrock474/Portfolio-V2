@@ -3,7 +3,7 @@ import Software from "./Software";
 const SoftwareLanguages = () => {
   return (
     <>
-      <div className="flex justify-center text-center flex-wrap pb-[50px]">
+      <div className="flex justify-center text-center flex-wrap">
         <Software img="devicons/HTML.svg" text="HTML" />
         <Software img="devicons/CSS.svg" text="CSS" />
         <Software img="devicons/JavaScript.svg" text="JavaScript" />
