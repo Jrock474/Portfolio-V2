@@ -150,7 +150,7 @@ export default function Home() {
               description="Collaborative project focused around creating a pet game. I was responsible for the server and backend"
               technologies={["JavaScript", "Express", "NodeJS"]}
             />
-             <SoftwareProject
+            <SoftwareProject
               img="/pictures/portfoliov2.png"
               title="Portfolio (Version 2)"
               gitHub="https://github.com/Jrock474/Portfolio-V2"
