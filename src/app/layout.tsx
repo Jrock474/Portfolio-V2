@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Exo_2, Manrope } from "next/font/google";
-import AppLayout from "./applayout";
+import { createTheme, ThemeProvider } from "@mui/material";
+import Header from "./components/header";
+import Footer from "./components/footer";
 import "./globals.css";
 
 const exo = Exo_2({
@@ -27,12 +29,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const theme = createTheme();
+
   return (
     <html lang="en">
       <body
         className={`${manrope.variable} ${exo.variable} antialiased bg-gray-900 text-white min-h-screen flex flex-col relative`}
       >
-        <AppLayout>{children}</AppLayout>
+        <ThemeProvider theme={theme}>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
