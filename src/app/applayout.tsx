@@ -1,6 +1,6 @@
 "use client";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./components/ui/header";
+import Footer from "./components/ui/footer";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 export default function AppLayout({

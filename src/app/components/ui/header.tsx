@@ -46,9 +46,7 @@ const Header = () => {
             <div className="text-center h-full font-juana">
               <Link href="/">
                 <div className="text-[2.5rem]">Jordan Williams</div>
-                <div className="text-[1.5rem] p-[10px]">
-                  Software Developer
-                </div>
+                <div className="text-[1.5rem] p-[10px]">Software Developer</div>
               </Link>
             </div>
           ) : (
