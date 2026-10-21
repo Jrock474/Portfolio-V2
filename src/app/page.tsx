@@ -4,11 +4,13 @@ import ProjectSection from "./components/sections/ProjectSection";
 import AboutSection from "./components/sections/AboutSection";
 import SkillsSection from "./components/sections/SkillsSection";
 import FormSection from "./components/sections/FormSection";
+import HeroSection from "./components/sections/HeroSection";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col z-[1000]">
+        <HeroSection />
         <AboutSection />
         <SkillsSection />
         <ProjectSection />
