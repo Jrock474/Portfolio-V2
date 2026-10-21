@@ -128,6 +128,13 @@ export default function Home() {
           <SectionTitle pageTitle="Recent Projects" />
           <div className="flex flex-wrap justify-center">
             <SoftwareProject
+              img="/pictures/freeside_atl.png"
+              title="Freeside ATL"
+              gitHub="https://github.com/Jrock474/freeside_atl"
+              description="A modern, responsive redesign of Freeside Atlanta's website, showcasing the nonprofit makerspace's community, workshops, and resources through a clean, intuitive user experience. Built to make discovering events, exploring facilities, and learning about membership easier and more accessible."
+              technologies={["Typescript", "Nextjs"]}
+            />
+            <SoftwareProject
               img="/pictures/api.png"
               title="Labfinder Scheduler"
               gitHub="https://github.com/Jrock474/labfinder_scheduler"
