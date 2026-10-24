@@ -53,7 +53,11 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
                 rel="noopener noreferrer"
                 href={softwareProject.gitHub}
               >
-                <img className="h-10 w-10" src="/site_images/github.svg" />
+                <img
+                  className="h-10 w-10"
+                  src="/site_images/github.svg"
+                  alt={`${softwareProject.title} GitHub link`}
+                />
               </a>
               {softwareProject.website ? (
                 <a
@@ -65,7 +69,11 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
                   rel="noopener noreferrer"
                   href={softwareProject.website}
                 >
-                  <img className="h-10 w-10" src="/site_images/website.svg" />
+                  <img
+                    className="h-10 w-10"
+                    src="/site_images/website.svg"
+                    alt={`${softwareProject.title} website link`}
+                  />
                 </a>
               ) : null}
             </div>
