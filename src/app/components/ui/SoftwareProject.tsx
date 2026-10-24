@@ -12,7 +12,7 @@ export interface SoftwareDevelopmentProjectProps {
 }
 
 const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
-  const [isSleected, setIsSelected] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = (target: string) => {
     track(`${target}_click`);
@@ -22,10 +22,10 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
     <>
       <div
         onMouseEnter={() => {
-          setIsSelected(true);
+          setIsHovered(true);
         }}
         onMouseLeave={() => {
-          setIsSelected(false);
+          setIsHovered(false);
         }}
         className="flex height-[auto] relative width=[auto] flex-col border-[ridge] m-[10px]"
       >
@@ -35,50 +35,54 @@ const SoftwareProject = (softwareProject: SoftwareDevelopmentProjectProps) => {
           src={softwareProject.img}
           alt={softwareProject.title}
         />
-        {isSleected ? (
-          <div className="p-6 bg-black/80 flex text-center flex-col justify-between align-middle w-full absolute h-full">
-            <h3 className="">{softwareProject.title}</h3>
-            <p className="text-left"> {softwareProject.description}</p>
-            <div className="flex flex-row justify-between">
-              <div className="flex justify-around">
+        <div
+          className={
+            isHovered
+              ? "p-6 bg-black/80 flex text-center flex-col justify-between align-middle w-full absolute h-full"
+              : "hidden"
+          }
+        >
+          <h3 className="">{softwareProject.title}</h3>
+          <p className="text-left"> {softwareProject.description}</p>
+          <div className="flex flex-row justify-between">
+            <div className="flex justify-around">
+              <a
+                onClick={() => handleClick(`${softwareProject.title}_github`)}
+                className="p-[20px]"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={softwareProject.gitHub}
+              >
+                <img className="h-10 w-10" src="/site_images/github.svg" />
+              </a>
+              {softwareProject.website ? (
                 <a
-                  onClick={() => handleClick(`${softwareProject.title}_github`)}
+                  onClick={() =>
+                    handleClick(`${softwareProject.title}_website`)
+                  }
                   className="p-[20px]"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={softwareProject.gitHub}
+                  href={softwareProject.website}
                 >
-                  <img className="h-10 w-10" src="/site_images/github.svg" />
+                  <img className="h-10 w-10" src="/site_images/website.svg" />
                 </a>
-                {softwareProject.website ? (
-                  <a
-                    onClick={() =>
-                      handleClick(`${softwareProject.title}_website`)
-                    }
-                    className="p-[20px]"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={softwareProject.website}
-                  >
-                    <img className="h-10 w-10" src="/site_images/website.svg" />
-                  </a>
-                ) : null}
-              </div>
-              <div className="flex flex-row justify-center">
-                {softwareProject.technologies?.map((technology) => (
-                  <div key={technology} className="p-[10px]">
-                    <Image
-                      width={40}
-                      height={40}
-                      src={`/devicons/${technology}.svg`}
-                      alt={`${technology} logo`}
-                    />
-                  </div>
-                ))}
-              </div>
+              ) : null}
+            </div>
+            <div className="flex flex-row justify-center">
+              {softwareProject.technologies?.map((technology) => (
+                <div key={technology} className="p-[10px]">
+                  <Image
+                    width={40}
+                    height={40}
+                    src={`/devicons/${technology}.svg`}
+                    alt={`${technology} logo`}
+                  />
+                </div>
+              ))}
             </div>
           </div>
-        ) : null}
+        </div>
       </div>
     </>
   );
